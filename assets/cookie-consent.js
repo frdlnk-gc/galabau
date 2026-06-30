@@ -14,7 +14,7 @@
    - Re-Open über window.gcCookieSettings() (z. B. Footer-Link „Cookie-Einstellungen").
 
    IDs konfigurieren (sobald vorhanden) als data-Attribute am <script>-Tag:
-     data-accent="#16A34A"   Markenfarbe (Default Orange = GreyCareers)
+     data-accent="#16A34A"   Markenfarbe (GreenCareers GaLaBau – Grün)
      data-ga="G-XXXXXXX"     Google Analytics 4 Measurement-ID
      data-ads="AW-XXXXXXX"   Google Ads Conversion-ID
      data-metapixel="123..."  Meta-Pixel-ID
