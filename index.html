@@ -1,0 +1,1986 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GaLaBau-Jobs · Garten- &amp; Landschaftsbau · GreenCareers Karrierenetzwerk</title>
+<meta name="description" content="Das Stellennetzwerk für den Garten- &amp; Landschaftsbau. Aktuelle Jobs bei geprüften GaLaBau-Betrieben in deiner Region – ein Profil, direkt bewerben, ohne Anschreiben-Marathon.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" id="canonical" href="https://galabau.green-careers.de/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GreenCareers Garten- &amp; Landschaftsbau">
+<meta property="og:title" id="og-title" content="GaLaBau-Jobs · Garten- &amp; Landschaftsbau · GreenCareers Karrierenetzwerk">
+<meta property="og:description" id="og-desc" content="Aktuelle Jobs bei geprüften GaLaBau-Betrieben in deiner Region – ein Profil, direkt bewerben, ohne Anschreiben-Marathon.">
+<meta property="og:url" id="og-url" content="https://galabau.green-careers.de/">
+<meta property="og:image" id="og-image" content="https://galabau.green-careers.de/assets/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" id="tw-title" content="GaLaBau-Jobs · Garten- &amp; Landschaftsbau · GreenCareers">
+<meta name="twitter:description" id="tw-desc" content="Aktuelle Jobs bei geprüften GaLaBau-Betrieben in deiner Region.">
+<meta name="twitter:image" id="tw-image" content="https://galabau.green-careers.de/assets/hero.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+  :root{
+    --o:#16A34A; --o-dark:#15803D; --o-glow:#22C55E; --o-pale:#F0FDF4;
+    --grad:linear-gradient(135deg,#16A34A 0%,#15803D 100%);
+    --ink:#16191D; --ink2:#3A4047; --muted:#6B7480;
+    --bg:#F6F5F2; --card:#FFFFFF; --line:#E6E3DD; --line2:#EFEDE8;
+    --dark:#16191D; --dark2:#1F242A;
+    --ok:#1e8449; --ok-bg:#e8f8ef;
+    --radius:16px; --shadow:0 1px 2px rgba(20,25,29,.04),0 8px 28px rgba(20,25,29,.06);
+    --maxw:1140px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  img{max-width:100%}
+
+  /* ---------- Header ---------- */
+  header{position:sticky;top:0;z-index:50;background:rgba(246,245,242,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;gap:14px;height:64px}
+  .brand{display:flex;align-items:center;gap:11px;cursor:pointer}
+  .logo{width:40px;height:40px;border-radius:12px;position:relative;overflow:hidden;
+        background:linear-gradient(140deg,#4ADE80 0%,#16A34A 46%,#15803D 100%);
+        display:grid;place-items:center;color:#fff;font-weight:850;font-size:18px;letter-spacing:-.6px;
+        box-shadow:0 4px 14px rgba(22,163,74,.42),inset 0 1px 0 rgba(255,255,255,.5),inset 0 -2px 6px rgba(20,83,45,.4)}
+  .logo::before{content:"";position:absolute;inset:0;
+        background:linear-gradient(135deg,rgba(255,255,255,.4),transparent 44%);pointer-events:none}
+  .logo>span,.logo{z-index:1}
+  .bname{font-weight:800;font-size:16px;letter-spacing:-.2px;line-height:1.05}
+  .bname small{display:block;font-weight:600;font-size:11.5px;color:var(--muted);letter-spacing:.3px;text-transform:uppercase}
+  .nav .sp{flex:1}
+  .nav-links{display:flex;align-items:center;gap:4px}
+  .nav-link{position:relative;font-weight:650;font-size:14.5px;color:var(--ink2);padding:9px 13px;border-radius:9px;cursor:pointer;transition:.14s;white-space:nowrap}
+  .nav-link:hover{color:var(--ink);background:rgba(20,25,29,.05)}
+  .nav-drop{position:relative}
+  .nav-drop>.nav-link{display:inline-flex;align-items:center;gap:5px}
+  .nav-drop>.nav-link .car{font-size:10px;transition:.18s;opacity:.6}
+  .nav-drop:hover>.nav-link .car{transform:rotate(180deg)}
+  .nav-menu{position:absolute;top:calc(100% + 6px);left:0;min-width:214px;background:#fff;border:1px solid var(--line);
+        border-radius:13px;box-shadow:0 14px 40px rgba(20,25,29,.14);padding:7px;opacity:0;visibility:hidden;
+        transform:translateY(6px);transition:.16s;z-index:60}
+  .nav-drop:hover .nav-menu{opacity:1;visibility:visible;transform:none}
+  .nav-menu a{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--ink2);padding:9px 11px;border-radius:9px;cursor:pointer}
+  .nav-menu a:hover{background:var(--o-pale);color:var(--o-dark)}
+  .nav-menu a .mi{width:18px;text-align:center}
+  .nav-cta{background:var(--ink);color:#fff;font-weight:700;font-size:14px;padding:10px 18px;border-radius:10px;transition:.15s;white-space:nowrap}
+  .nav-cta:hover{background:#000}
+  .burger{display:none;width:42px;height:42px;border:1px solid var(--line);background:var(--card);border-radius:11px;
+        cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:4.5px;padding:0}
+  .burger span{display:block;width:19px;height:2px;background:var(--ink);border-radius:2px;transition:.22s}
+  .burger.on span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+  .burger.on span:nth-child(2){opacity:0}
+  .burger.on span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+  .scrim{position:fixed;inset:0;background:rgba(10,12,14,.5);backdrop-filter:blur(2px);opacity:0;visibility:hidden;
+        transition:.2s;z-index:90}
+  .scrim.on{opacity:1;visibility:visible}
+  .drawer{position:fixed;top:0;right:0;height:100%;width:min(86vw,340px);background:#fff;z-index:95;
+        transform:translateX(100%);transition:transform .26s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;
+        box-shadow:-10px 0 40px rgba(20,25,29,.2)}
+  .drawer.on{transform:none}
+  .drawer-head{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid var(--line)}
+  .drawer-head .x{width:38px;height:38px;border:1px solid var(--line);background:var(--bg);border-radius:10px;font-size:18px;
+        cursor:pointer;color:var(--ink2)}
+  .drawer-body{flex:1;overflow-y:auto;padding:12px 14px 20px}
+  .drawer-body a,.drawer-sub a{display:flex;align-items:center;gap:12px;font-size:16px;font-weight:650;color:var(--ink);
+        padding:14px 14px;border-radius:11px;cursor:pointer}
+  .drawer-body a:hover{background:var(--o-pale)}
+  .drawer-body a .mi{width:22px;text-align:center;font-size:17px}
+  .drawer-lbl{font-size:11.5px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:var(--muted);padding:16px 14px 6px}
+  .drawer-sub a{font-size:15px;font-weight:600;color:var(--ink2);padding:11px 14px 11px 26px}
+  .drawer-sub a:hover{background:var(--bg);color:var(--o-dark)}
+  .drawer-cta{margin:8px 14px 4px;display:block;text-align:center;background:var(--grad);color:#fff;font-weight:740;
+        font-size:15.5px;padding:15px;border-radius:12px;box-shadow:0 6px 18px rgba(22,163,74,.3)}
+
+  /* ---------- Hero ---------- */
+  .hero{background:var(--dark);color:#fff;position:relative;overflow:hidden}
+  .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.32;z-index:0}
+  .hero::after{content:"";position:absolute;inset:0;z-index:1;background:
+    linear-gradient(180deg,rgba(22,25,29,.55),rgba(22,25,29,.82)),
+    radial-gradient(820px 380px at 84% -10%,rgba(22,163,74,.34),transparent 60%);pointer-events:none}
+  .hero .wrap{position:relative;z-index:2;padding:66px 22px 72px}
+  .kicker{display:inline-flex;align-items:center;gap:8px;background:rgba(22,163,74,.16);
+          color:var(--o-glow);font-weight:700;font-size:12.5px;letter-spacing:.5px;text-transform:uppercase;
+          padding:7px 14px;border-radius:100px;border:1px solid rgba(22,163,74,.28)}
+  .hero h1{font-size:clamp(31px,5.2vw,52px);line-height:1.12;letter-spacing:-1px;margin:20px 0 16px;font-weight:830}
+  .mobr{display:inline}
+  .hero h1 .twline{display:inline-block;white-space:nowrap;line-height:1.12}
+  .hero h1 .tw{color:var(--o-glow);
+       text-shadow:0 0 22px rgba(22,163,74,.55),0 0 44px rgba(22,163,74,.32)}
+  .hero h1 .caret{display:inline-block;width:3px;height:.92em;background:var(--o-glow);margin-left:2px;
+        border-radius:2px;vertical-align:-.06em;animation:blink 1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .hero p{font-size:clamp(16px,2.2vw,19px);color:#C7CDD4;max-width:640px}
+  .stats{display:flex;gap:34px;margin-top:34px;flex-wrap:wrap}
+  .stat b{display:block;font-size:26px;font-weight:820;color:#fff}
+  .stat span{font-size:13px;color:#9AA2AB}
+  .hero-altlbl{max-width:580px;margin:16px 0 7px;display:flex;align-items:center;gap:10px;
+               color:rgba(255,255,255,.6);font-size:12.5px;font-weight:600}
+  .hero-altlbl::before,.hero-altlbl::after{content:"";flex:1;height:1px;background:rgba(255,255,255,.18)}
+  .hero-search{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.22);border-radius:12px;
+               padding:5px;display:flex;gap:6px;max-width:580px;backdrop-filter:blur(4px)}
+  .hero-search input{flex:1;border:0;outline:0;font-size:14.5px;padding:10px 12px;color:#fff;background:transparent}
+  .hero-search input::placeholder{color:rgba(255,255,255,.55)}
+  .hero-search button{background:rgba(255,255,255,.16);color:#fff;font-weight:680;font-size:14px;border:0;
+                      border-radius:9px;padding:0 18px;cursor:pointer;white-space:nowrap;transition:background .15s}
+  .hero-search button:hover{background:rgba(255,255,255,.26)}
+  .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:46px;align-items:center}
+  .hero-left{min-width:0}
+
+  /* ---------- Quiz-Launcher im Hero (Primär-CTA) ---------- */
+  .quiz-launch{margin-top:34px;width:100%;max-width:580px;display:flex;align-items:center;gap:16px;
+    background:var(--grad);border:0;border-radius:16px;
+    padding:19px 22px;cursor:pointer;text-align:left;color:#fff;
+    box-shadow:0 18px 50px rgba(22,163,74,.45);transition:transform .15s,box-shadow .2s}
+  .quiz-launch:hover{transform:translateY(-2px);box-shadow:0 24px 64px rgba(22,163,74,.6)}
+  .quiz-launch .ql-ic{font-size:28px;flex:0 0 auto}
+  .quiz-launch .ql-tx{flex:1;min-width:0}
+  .quiz-launch .ql-tx b{display:block;font-size:17px;font-weight:840;line-height:1.25}
+  .quiz-launch .ql-tx small{display:block;font-size:13px;color:rgba(255,255,255,.92);margin-top:3px}
+  .quiz-launch .ql-arrow{font-size:22px;flex:0 0 auto;opacity:.95;transition:transform .2s}
+  .quiz-launch:hover .ql-arrow{transform:translateX(3px)}
+
+  /* ---------- Quiz-Overlay ---------- */
+  .quiz-ov{position:fixed;inset:0;z-index:120;background:rgba(16,19,22,.62);backdrop-filter:blur(4px);
+    display:none;align-items:center;justify-content:center;padding:20px}
+  .quiz-ov.on{display:flex}
+  .quiz-box{position:relative;width:100%;max-width:540px;max-height:92vh;overflow-y:auto;
+    background:var(--card);border-radius:22px;padding:30px 30px 22px;
+    box-shadow:0 30px 80px rgba(0,0,0,.35);animation:quizIn .28s cubic-bezier(.2,.8,.25,1)}
+  @keyframes quizIn{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
+  .quiz-x{position:absolute;top:16px;right:16px;width:34px;height:34px;border:0;border-radius:50%;
+    background:var(--bg);color:var(--ink2);font-size:15px;cursor:pointer;line-height:34px;text-align:center}
+  .quiz-x:hover{background:var(--line)}
+  .quiz-prog{height:5px;border-radius:99px;background:var(--line2);margin:6px 0 22px;overflow:hidden}
+  .quiz-prog-bar{display:block;height:100%;width:25%;border-radius:99px;background:var(--grad);transition:width .3s ease}
+  .quiz-eyebrow{display:inline-block;color:var(--o-dark);font-weight:800;font-size:11.5px;
+    text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px}
+  .quiz-step h3{font-size:22px;font-weight:820;letter-spacing:-.4px;line-height:1.2;margin-bottom:6px}
+  .quiz-sub{color:var(--ink2);font-size:14.5px;margin-bottom:18px}
+  .quiz-chips{display:flex;flex-wrap:wrap;gap:9px}
+  .qchip{border:1.5px solid var(--line);background:#fff;border-radius:11px;padding:11px 15px;
+    font-size:14.5px;font-weight:640;color:var(--ink);cursor:pointer;transition:all .15s}
+  .qchip:hover{border-color:var(--o-glow);background:var(--o-pale)}
+  .qchip.sel{border-color:var(--o);background:var(--o-pale);color:var(--o-dark);font-weight:760}
+  .quiz-other{margin-top:14px}
+  .quiz-other input,.quiz-plz,.quiz-input{width:100%;border:1.5px solid var(--line);border-radius:11px;
+    padding:13px 15px;font-size:15px;color:var(--ink);outline:0;transition:border-color .15s}
+  .quiz-other input:focus,.quiz-plz:focus,.quiz-input:focus{border-color:var(--o)}
+  .quiz-plz{text-align:center;font-size:24px;font-weight:760;letter-spacing:4px;padding:16px}
+  .quiz-plz-hint{text-align:center;font-size:12.5px;color:var(--muted);margin-top:9px}
+  .quiz-plz-hint.ok{color:#1B6B33;font-weight:700}
+  .quiz-bcount{font-size:12.5px;font-weight:700;color:var(--ink2);margin-top:13px;min-height:16px;transition:color .2s}
+  .quiz-bcount.warn{color:#C0392B}
+  .quiz-nav{display:flex;align-items:center;gap:10px;margin-top:22px;position:sticky;bottom:0;z-index:2;
+    background:var(--card);border-top:1px solid var(--line2);
+    margin-left:-30px;margin-right:-30px;padding:14px 30px 4px}
+  .quiz-back{margin-right:auto;background:none;border:0;color:var(--muted);font-size:14px;font-weight:640;cursor:pointer;padding:8px 4px}
+  .quiz-back:hover{color:var(--ink)}
+  .quiz-next{background:var(--grad);color:#fff;border:0;border-radius:11px;padding:13px 26px;
+    font-size:15px;font-weight:760;cursor:pointer;box-shadow:0 8px 22px rgba(22,163,74,.28)}
+  .quiz-next:disabled{opacity:.4;cursor:not-allowed;box-shadow:none}
+  /* Ergebnis */
+  .quiz-result-head{margin-bottom:14px}
+  .quiz-result-head .quiz-eyebrow{margin-bottom:6px}
+  .quiz-result h3{font-size:21px}
+  .quiz-jobs{display:flex;flex-direction:column;gap:9px;margin-bottom:12px}
+  .qjob{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:13px;
+    padding:11px 13px;cursor:pointer;background:#fff;transition:border-color .15s,transform .15s}
+  .qjob:hover{border-color:var(--o-glow);transform:translateY(-1px)}
+  .qjob-ic{width:40px;height:40px;border-radius:10px;background:var(--o-pale);color:var(--o-dark);
+    display:grid;place-items:center;font-size:18px;flex:0 0 auto;font-weight:800}
+  .qjob-tx{flex:1;min-width:0}
+  .qjob-tx b{display:block;font-size:14.5px;font-weight:760;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .qjob-tx small{display:block;font-size:12.5px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .qjob-dist{font-size:12px;font-weight:700;color:var(--o-dark);background:var(--o-pale);
+    border-radius:8px;padding:4px 8px;flex:0 0 auto;white-space:nowrap}
+  .quiz-allbtn{width:100%;background:none;border:1.5px solid var(--line);color:var(--ink);border-radius:11px;
+    padding:11px;font-size:14px;font-weight:720;cursor:pointer;margin-bottom:18px;transition:border-color .15s}
+  .quiz-allbtn:hover{border-color:var(--ink2)}
+  .quiz-abo{border:1.5px solid var(--o);border-radius:16px;padding:18px;
+    background:linear-gradient(180deg,var(--o-pale),#fff)}
+  .quiz-abo-head{display:flex;gap:12px;margin-bottom:12px}
+  .quiz-abo-ic{font-size:24px;flex:0 0 auto}
+  .quiz-abo-head b{display:block;font-size:15.5px;font-weight:840;line-height:1.3}
+  .quiz-abo-head small{display:block;font-size:13px;color:var(--ink2);margin-top:4px;line-height:1.5}
+  .quiz-abo-head small strong{color:var(--o-dark);font-weight:800}
+  .quiz-perks{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+  .qperk{font-size:11.5px;font-weight:700;color:var(--ink2);background:#fff;border:1px solid var(--line);
+    border-radius:99px;padding:5px 10px}
+  .quiz-row{display:flex;gap:9px}
+  .quiz-row .quiz-input{flex:1;min-width:0}
+  .quiz-kanal{margin:4px 0 2px}
+  .quiz-kanal-lbl{display:block;font-size:12.5px;font-weight:700;color:var(--ink2);margin:6px 0 7px}
+  .quiz-kanal-opts{display:flex;gap:8px}
+  .qkanal{flex:1;border:1.5px solid var(--line);background:#fff;border-radius:11px;padding:11px 8px;
+    font-size:13.5px;font-weight:700;color:var(--ink);cursor:pointer;transition:all .15s}
+  .qkanal:hover{border-color:var(--o-glow)}
+  .qkanal.sel{border-color:var(--o);background:var(--o-pale);color:var(--o-dark)}
+  .quiz-abo .quiz-input{margin-bottom:9px;background:#fff}
+  .quiz-consent{display:flex;gap:9px;align-items:flex-start;font-size:12.5px;color:var(--ink2);
+    line-height:1.45;margin:4px 0 12px;cursor:pointer}
+  .quiz-consent input{margin-top:2px;flex:0 0 auto;width:16px;height:16px;accent-color:var(--o)}
+  .quiz-consent a{color:var(--o-dark)}
+  .quiz-abo-btn{width:100%;background:var(--ink);color:#fff;border:0;border-radius:11px;padding:13px;
+    font-size:14.5px;font-weight:740;cursor:pointer;transition:background .15s}
+  .quiz-abo-btn:hover{background:#000}
+  .quiz-abo-btn:disabled{opacity:.55;cursor:not-allowed}
+  .quiz-abo-msg{font-size:13.5px;margin-top:10px;text-align:center;line-height:1.45}
+  .quiz-abo-msg.ok{color:#1B6B33;font-weight:700}
+  .quiz-abo-msg.err{color:#C0392B;font-weight:640}
+  .quiz-abo.done .quiz-abo-head{margin-bottom:0}
+  @media(max-width:560px){
+    .quiz-box{padding:26px 20px 18px;border-radius:18px;max-height:94vh}
+    .quiz-step h3{font-size:20px}
+    .quiz-plz{font-size:21px;letter-spacing:3px}
+    .quiz-nav{margin-left:-20px;margin-right:-20px;padding:14px 20px 4px}
+  }
+
+  /* ---------- Animierte Ablauf-Karte ---------- */
+  .tl-card{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.14);border-radius:18px;
+        padding:22px 22px 16px;backdrop-filter:blur(8px);box-shadow:0 20px 60px rgba(0,0,0,.42)}
+  .tl-head{display:flex;align-items:flex-start;gap:12px;margin-bottom:16px}
+  .tl-head .tl-dot{width:9px;height:9px;border-radius:50%;background:var(--o-glow);
+        box-shadow:0 0 0 4px rgba(22,163,74,.18);flex:none;margin-top:5px}
+  .tl-title{font-weight:800;font-size:15.5px;color:#fff;letter-spacing:-.2px}
+  .tl-sub{font-size:12px;color:#9AA2AB;margin-top:2px}
+  .tl-list{display:flex;flex-direction:column;gap:2px}
+  .tl-step{display:flex;align-items:center;gap:13px;padding:11px 8px;border-radius:11px;position:relative;
+        opacity:.4;background:transparent;transition:opacity .45s ease,background .45s ease}
+  .tl-step.done{opacity:1;background:rgba(255,255,255,.05)}
+  .tl-step:not(:last-child)::after{content:"";position:absolute;left:19px;top:36px;width:2px;height:12px;
+        background:rgba(255,255,255,.13);transition:background .45s}
+  .tl-step.done:not(:last-child)::after{background:rgba(22,163,74,.5)}
+  .tl-check{width:24px;height:24px;border-radius:50%;flex:none;display:grid;place-items:center;
+        border:2px solid rgba(255,255,255,.28);color:transparent;font-size:12px;font-weight:900;transition:.35s}
+  .tl-step.done .tl-check{background:var(--o);border-color:var(--o);color:#fff;box-shadow:0 0 0 5px rgba(22,163,74,.16)}
+  .tl-txt{flex:1;display:flex;flex-direction:column;line-height:1.22}
+  .tl-txt b{font-size:14px;color:#fff;font-weight:700}
+  .tl-txt span{font-size:12px;color:#9AA2AB}
+  .tl-time{font-size:11.5px;font-weight:800;color:var(--o-glow);background:rgba(22,163,74,.12);
+        padding:5px 9px;border-radius:8px;flex:none;border:1px solid rgba(22,163,74,.22);white-space:nowrap}
+  @media(max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:30px}
+    .hero .wrap{padding:48px 22px 54px}
+  }
+
+  /* ---------- Partner-Logo-Slider ---------- */
+  .pslider{background:#fff;border-bottom:1px solid var(--line);padding:24px 0;overflow:hidden;position:relative}
+  .pslider::before,.pslider::after{content:"";position:absolute;top:0;bottom:0;width:90px;z-index:2;pointer-events:none}
+  .pslider::before{left:0;background:linear-gradient(90deg,#fff,transparent)}
+  .pslider::after{right:0;background:linear-gradient(270deg,#fff,transparent)}
+  .ptrack{display:flex;align-items:center;gap:62px;width:max-content;animation:pscroll 55s linear infinite}
+  .pslider:hover .ptrack{animation-play-state:paused}
+  .plogo{height:52px;display:flex;align-items:center;flex:none}
+  .plogo img{height:52px;width:auto;max-width:170px;object-fit:contain;filter:grayscale(1);opacity:.6;transition:.25s}
+  .plogo img:hover{filter:none;opacity:1}
+  .plogo .pname{font-weight:800;color:var(--muted);font-size:18px;white-space:nowrap;letter-spacing:-.2px}
+  @keyframes pscroll{to{transform:translateX(-50%)}}
+
+  /* ---------- Trust pillars ---------- */
+  .trust{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 0}
+  .trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:center}
+  .t-pill{display:flex;align-items:center;gap:14px;text-align:left}
+  .t-pill .t-ic{width:46px;height:46px;border-radius:12px;flex:none;display:grid;place-items:center;
+        font-size:21px;background:var(--o-pale);border:1px solid rgba(22,163,74,.2)}
+  .t-pill .t-tx b{display:block;font-size:15px;color:var(--ink);font-weight:800;letter-spacing:-.2px}
+  .t-pill .t-tx span{font-size:13px;color:var(--muted);line-height:1.35}
+  @media(max-width:680px){
+    .trust{padding:18px 0}
+    .trust .wrap{grid-template-columns:1fr;gap:13px}
+    .t-pill .t-ic{width:40px;height:40px;font-size:18px}
+  }
+
+  /* ---------- SEO intro ---------- */
+  .seo{padding:56px 0 10px}
+  .seo .lead{max-width:780px}
+  .seo h2{font-size:clamp(23px,3.4vw,32px);font-weight:830;letter-spacing:-.6px;line-height:1.15;margin-bottom:14px}
+  .seo h2 b{color:var(--o-dark)}
+  .seo h2 .dbr{display:none}
+  @media(min-width:760px){.seo h2 .dbr{display:inline}}
+  .seo p{color:var(--ink2);font-size:16px;line-height:1.7;margin-bottom:14px}
+  .seo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:30px}
+  .seo-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow)}
+  .seo-card .ic{width:42px;height:42px;border-radius:11px;background:var(--o-pale);color:var(--o-dark);
+        display:grid;place-items:center;font-size:20px;margin-bottom:12px}
+  .seo-card h3{font-size:16px;font-weight:780;margin-bottom:6px}
+  .seo-card p{font-size:14px;color:var(--muted);margin:0;line-height:1.55}
+  .seo-cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  .btn-o{background:var(--grad);color:#fff;font-weight:740;font-size:15px;padding:13px 22px;border-radius:11px;
+        box-shadow:0 6px 18px rgba(22,163,74,.3);transition:.15s}
+  .btn-o:hover{filter:brightness(1.05)}
+  .btn-ghost{color:var(--ink2);font-weight:700;font-size:15px;padding:13px 6px}
+
+  /* ---------- Gewerke-Showcase ---------- */
+  .berufe{padding:46px 0 14px}
+  .berufe-head{max-width:700px;margin-bottom:24px}
+  .berufe-head .eyebrow{display:inline-block;color:var(--o-dark);font-weight:800;font-size:12.5px;
+        letter-spacing:.6px;text-transform:uppercase;margin-bottom:10px}
+  .berufe-head h2{font-size:clamp(23px,3.4vw,32px);font-weight:830;letter-spacing:-.6px;line-height:1.15}
+  .berufe-head p{color:var(--ink2);font-size:16px;line-height:1.6;margin-top:10px}
+  .gewerke-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}
+  .gewerk{display:flex;align-items:center;gap:11px;background:var(--card);border:1px solid var(--line);
+        border-radius:13px;padding:14px 15px;cursor:pointer;transition:.15s;box-shadow:var(--shadow);
+        font-weight:740;font-size:14.5px;color:var(--ink);letter-spacing:-.2px}
+  .gewerk:hover{border-color:var(--o);background:var(--o-pale);transform:translateY(-2px)}
+  .gewerk .gw-ic{flex:none;font-size:19px;line-height:1}
+  .gewerk .gw-arrow{margin-left:auto;color:var(--o);font-weight:800;opacity:0;transform:translateX(-4px);transition:.15s}
+  .gewerk:hover .gw-arrow{opacity:1;transform:translateX(0)}
+  @media(max-width:980px){.gewerke-grid{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:720px){.gewerke-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:460px){.gewerke-grid{grid-template-columns:1fr}}
+
+  /* ---------- So funktioniert's (3 Schritte) ---------- */
+  .steps{padding:54px 0 14px}
+  .steps-head{max-width:680px;margin-bottom:30px}
+  .steps-head .eyebrow{display:inline-block;color:var(--o-dark);font-weight:800;font-size:12.5px;
+        letter-spacing:.6px;text-transform:uppercase;margin-bottom:10px}
+  .steps-head h2{font-size:clamp(23px,3.4vw,32px);font-weight:830;letter-spacing:-.6px;line-height:1.15}
+  .steps-head p{color:var(--ink2);font-size:16px;line-height:1.6;margin-top:10px}
+  .steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .step-card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;
+        padding:26px 22px 22px;box-shadow:var(--shadow);overflow:hidden}
+  .step-card::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:var(--grad)}
+  .step-num{width:42px;height:42px;border-radius:12px;background:var(--grad);color:#fff;font-weight:850;
+        font-size:18px;display:grid;place-items:center;box-shadow:0 6px 16px rgba(22,163,74,.3);margin-bottom:16px}
+  .step-card h3{font-size:17px;font-weight:800;letter-spacing:-.2px;margin-bottom:7px}
+  .step-card p{font-size:14.5px;color:var(--muted);line-height:1.55;margin:0}
+  @media(max-width:760px){
+    .steps{padding:40px 0 6px}
+    .steps-grid{grid-template-columns:1fr;gap:14px}
+    .step-card{padding:22px 20px 18px}
+    .step-num{width:38px;height:38px;font-size:16px;margin-bottom:12px}
+  }
+
+  /* ---------- Premium banner ---------- */
+  .feat{padding:30px 0 8px}
+  .feat-head{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+  .feat-head h2{font-size:20px;font-weight:820;letter-spacing:-.3px}
+  .feat-head .tg{background:var(--o-pale);color:var(--o-dark);font-weight:800;font-size:11px;letter-spacing:.4px;
+        text-transform:uppercase;padding:4px 10px;border-radius:100px;border:1px solid #FAD9C2}
+  .feat-row{display:flex;gap:16px;overflow-x:auto;padding:4px 2px 14px;scroll-snap-type:x mandatory;scrollbar-width:thin}
+  .feat-row::-webkit-scrollbar{height:8px}
+  .feat-row::-webkit-scrollbar-thumb{background:var(--line);border-radius:8px}
+  .fcard{flex:0 0 340px;scroll-snap-align:start;background:var(--card);border:1px solid var(--line);
+        border-radius:var(--radius);overflow:hidden;cursor:pointer;transition:.16s;box-shadow:var(--shadow);display:flex;flex-direction:column}
+  .fcard:hover{transform:translateY(-3px);border-color:var(--o);box-shadow:0 12px 36px rgba(22,163,74,.16)}
+  .fcover{position:relative;height:158px;background:var(--dark)}
+  .fcover.noimg{background:var(--grad);display:grid;place-items:center;color:#fff;font-weight:820;font-size:26px}
+  /* Cover-Frame: ganzes Bild sichtbar (contain) auf unscharfer, abgedunkelter Fuellung */
+  .cf-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+        filter:blur(22px) brightness(.55) saturate(1.15);transform:scale(1.18);z-index:0}
+  .cf-fg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:1}
+  .pbadge{position:absolute;top:10px;right:10px;z-index:2;background:#FFB020;color:#3a2600;font-weight:800;font-size:11px;
+        letter-spacing:.3px;padding:4px 10px;border-radius:100px;display:flex;align-items:center;gap:4px;box-shadow:0 3px 10px rgba(0,0,0,.2)}
+  .pbadge.exc{background:linear-gradient(135deg,#166534,#14532D);color:#fff}
+  .datebadge{position:absolute;top:10px;left:10px;z-index:2;background:rgba(255,255,255,.92);color:var(--ink2);font-weight:700;
+        font-size:11.5px;padding:4px 10px;border-radius:8px}
+  .fbody{padding:16px 18px 18px;display:flex;flex-direction:column;gap:9px;flex:1}
+  .fbody .ftop{display:flex;align-items:center;gap:11px}
+  .fbody h3{font-size:16px;font-weight:780;letter-spacing:-.2px;line-height:1.25}
+  .fbody .firma{font-size:13px;color:var(--muted);font-weight:600}
+  .fbody .fmeta{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}
+
+  /* ---------- Listing layout ---------- */
+  main{padding:34px 0 70px}
+  .secthead{margin-bottom:18px}
+  .secthead h2{font-size:23px;font-weight:820;letter-spacing:-.4px}
+  .secthead p{color:var(--muted);font-size:14px;margin-top:2px}
+  .layout{display:grid;grid-template-columns:282px 1fr;gap:26px;align-items:start}
+
+  .fbar{position:sticky;top:84px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+        padding:20px;box-shadow:var(--shadow)}
+  .fbar h4{font-size:13px;font-weight:800;letter-spacing:.3px;text-transform:uppercase;color:var(--muted);margin:18px 0 10px}
+  .fbar h4:first-child{margin-top:0}
+  .fgroup{display:flex;flex-direction:column;gap:7px}
+  .fchk{display:flex;align-items:center;gap:9px;font-size:14px;color:var(--ink2);cursor:pointer;padding:3px 0}
+  .fchk input{accent-color:var(--o);width:16px;height:16px;cursor:pointer}
+  .fpills{display:flex;flex-wrap:wrap;gap:7px}
+  .fpill{border:1px solid var(--line);background:var(--bg);color:var(--ink2);font-weight:600;font-size:13px;
+        padding:7px 13px;border-radius:100px;cursor:pointer;transition:.14s;user-select:none}
+  .fpill:hover{border-color:var(--o);color:var(--o-dark)}
+  .fpill.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .finput{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14.5px;
+        font-family:inherit;color:var(--ink);outline:none;transition:.14s}
+  .finput:focus{border-color:var(--o);box-shadow:0 0 0 3px rgba(22,163,74,.12)}
+  .frange{display:flex;align-items:center;gap:10px;margin-top:10px}
+  .frange input[type=range]{flex:1;accent-color:var(--o)}
+  .frange .rv{font-size:13px;font-weight:700;color:var(--ink2);white-space:nowrap;min-width:62px;text-align:right}
+  .fmap{margin-top:12px;border:1px solid var(--line);border-radius:11px;overflow:hidden;position:relative;background:#EEF1F0}
+  .fmap svg{display:block;width:100%;height:118px}
+  .fmaplbl{position:absolute;left:8px;bottom:8px;background:rgba(255,255,255,.92);border:1px solid var(--line);
+        font-size:11.5px;font-weight:700;color:var(--ink2);padding:4px 9px;border-radius:7px;backdrop-filter:blur(2px)}
+  .freset{margin-top:18px;width:100%;background:none;border:1px solid var(--line);color:var(--ink2);font-weight:700;
+        font-size:13.5px;padding:10px;border-radius:10px;cursor:pointer;font-family:inherit}
+  .freset:hover{border-color:var(--o);color:var(--o-dark)}
+  .filterToggle{display:none}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px}
+  .job{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+       cursor:pointer;transition:.16s;display:flex;flex-direction:column;box-shadow:var(--shadow)}
+  .job:hover{transform:translateY(-3px);border-color:var(--o);box-shadow:0 12px 36px rgba(22,163,74,.14)}
+  .job.tier-exc{border-color:#E8C9A8}
+  .job.tier-exc::before,.job.tier-prem::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;z-index:3}
+  .job{position:relative}
+  .job.tier-exc::before{background:linear-gradient(90deg,#166534,#14532D)}
+  .job.tier-prem::before{background:var(--grad)}
+  .jcover{position:relative;height:150px;background:var(--dark)}
+  .jcover.noimg{background:var(--grad);display:grid;place-items:center;color:#fff;font-weight:820;font-size:24px}
+  .jbody{padding:16px 18px 18px;display:flex;flex-direction:column;gap:11px;flex:1}
+  .job-top{display:flex;align-items:center;gap:12px}
+  .fav{width:46px;height:46px;border-radius:11px;flex:none;display:grid;place-items:center;overflow:hidden;
+       background:var(--o-pale);color:var(--o-dark);font-weight:800;font-size:17px;border:1px solid var(--line2)}
+  .fav:has(img){background:#fff}
+  .fav img{width:100%;height:100%;object-fit:contain;padding:5px;box-sizing:border-box}
+  .job h3{font-size:16.5px;font-weight:780;letter-spacing:-.3px;line-height:1.25}
+  .job .firma{font-size:13px;color:var(--muted);font-weight:600}
+  .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}
+  .tag{display:inline-flex;align-items:center;gap:5px;background:var(--bg);border:1px solid var(--line2);
+       color:var(--ink2);font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:8px}
+  .tag.sal{background:var(--o-pale);border-color:#FAD9C2;color:var(--o-dark)}
+  .tag.dist{background:#EAF4FF;border-color:#CFE6FF;color:#1366C2}
+  .job-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line2);padding-top:12px}
+  .job-foot .more{color:var(--o-dark);font-weight:700;font-size:13.5px}
+  .ago{font-size:12px;color:var(--muted)}
+
+  .empty,.loading{text-align:center;padding:70px 20px;color:var(--muted)}
+  .empty .ico{font-size:38px;margin-bottom:12px}
+  .spinner{width:34px;height:34px;border:3px solid var(--line);border-top-color:var(--o);border-radius:50%;
+           margin:0 auto 14px;animation:spin .8s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  /* ---------- Detail ---------- */
+  .detail{display:none}
+  .detail .wrap{padding-top:26px;padding-bottom:48px}
+  .back{display:inline-flex;align-items:center;gap:7px;color:var(--ink2);font-weight:600;font-size:14px;
+        cursor:pointer}
+  .back:hover{color:var(--o-dark)}
+  .dt-topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:14px;flex-wrap:wrap}
+  .share-row{display:flex;align-items:center;gap:8px}
+  .share-msg{font-size:13px;font-weight:650;color:var(--ok);opacity:0;transition:.2s;white-space:nowrap}
+  .share-msg.on{opacity:1}
+  .share-btn{display:inline-flex;align-items:center;gap:6px;font-family:inherit;font-weight:700;font-size:13px;
+        color:var(--ink2);background:var(--card);border:1px solid var(--line);border-radius:9px;padding:8px 13px;cursor:pointer;transition:.14s}
+  .share-btn:hover{border-color:var(--o);color:var(--o-dark);background:var(--o-pale)}
+  .share-btn.wa{color:#fff;background:#25D366;border-color:#25D366}
+  .share-btn.wa:hover{background:#1ebe5a;border-color:#1ebe5a;color:#fff}
+  /* Ähnliche Stellen */
+  .related{margin-top:34px}
+  .rel-h{font-size:20px;font-weight:820;letter-spacing:-.4px;color:var(--ink);margin-bottom:16px}
+  .rel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+  .rel-card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;cursor:pointer;
+        box-shadow:var(--shadow);transition:.16s;position:relative}
+  .rel-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(20,25,29,.11)}
+  .rel-card.tier-exc::before,.rel-card.tier-prem::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;z-index:3}
+  .rel-card.tier-exc::before{background:linear-gradient(180deg,#166534,#14532D)}
+  .rel-card.tier-prem::before{background:var(--grad)}
+  .rel-cover{height:108px;position:relative;display:grid;place-items:center;background:var(--dark);color:#fff;font-weight:800;font-size:24px;overflow:hidden}
+  .rel-cover.noimg{background:var(--grad)}
+  .rel-cover img{width:100%;height:100%;object-fit:cover}
+  .rel-cover .pbadge{position:absolute;top:9px;left:9px;z-index:4}
+  .rel-body{padding:13px 15px 15px}
+  .rel-body h3{font-size:15.5px;font-weight:780;letter-spacing:-.2px;line-height:1.25;margin-bottom:3px}
+  .rel-body .firma{font-size:13px;color:var(--muted);font-weight:600;margin-bottom:9px}
+  .dt-grid{display:grid;grid-template-columns:1fr 340px;gap:26px;align-items:start}
+  /* Ähnliche Stellen füllen die linke Spalte unter der Beschreibung, Info-Spalte spannt rechts daneben */
+  .dt-grid>.dt-main{grid-column:1;grid-row:1}
+  .dt-grid>.aside{grid-column:2;grid-row:1 / span 2}
+  .dt-grid>.related{grid-column:1;grid-row:2;margin-top:6px}
+  .dt-main{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+  .dt-banner{height:230px;background:var(--dark);position:relative;overflow:hidden}
+  .dt-banner::after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+       background:linear-gradient(180deg,rgba(22,25,29,.12) 0%,rgba(22,25,29,.30) 42%,rgba(22,25,29,.82) 100%)}
+  .dt-banner.noimg{background:var(--grad)}
+  .dt-banner.noimg::after{background:linear-gradient(180deg,rgba(0,0,0,.04) 0%,rgba(0,0,0,.10) 40%,rgba(0,0,0,.34) 100%)}
+  .dt-head{position:absolute;left:0;right:0;bottom:0;z-index:3;display:flex;gap:16px;align-items:flex-end;
+           padding:0 30px 22px}
+  .dt-head .fav{width:72px;height:72px;font-size:28px;border-radius:16px;border:3px solid #fff;
+       box-shadow:0 8px 22px rgba(0,0,0,.30)}
+  .dt-head .ht{padding-bottom:3px;min-width:0}
+  .dt-head h1{font-size:27px;font-weight:820;letter-spacing:-.5px;line-height:1.15;color:#fff;
+       text-shadow:0 1px 16px rgba(0,0,0,.55),0 1px 2px rgba(0,0,0,.4)}
+  .dt-head .firma{color:rgba(255,255,255,.94);font-weight:600;margin-top:5px;font-size:14.5px;
+       text-shadow:0 1px 10px rgba(0,0,0,.5)}
+  .dt-inner{padding:22px 30px 30px}
+  .dt-tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 2px}
+  .tabs{display:flex;gap:4px;border-bottom:1px solid var(--line2);margin:20px 0 4px}
+  .tab{background:none;border:0;font-family:inherit;font-size:14.5px;font-weight:700;color:var(--muted);
+       padding:12px 16px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:.14s}
+  .tab:hover{color:var(--ink2)}
+  .tab.on{color:var(--o-dark);border-bottom-color:var(--o)}
+  .tabpane{display:none;padding-top:6px}
+  .tabpane.on{display:block;animation:fade .2s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+  .block{margin-top:24px}
+  .block:first-child{margin-top:14px}
+  .block h4{font-size:16px;font-weight:780;margin-bottom:11px;display:flex;align-items:center;gap:9px}
+  .block h4::before{content:"";width:4px;height:18px;border-radius:3px;background:var(--grad)}
+  .block .body{color:var(--ink2);font-size:15px;white-space:pre-wrap;line-height:1.6}
+  .block .body ul{margin:0;padding-left:20px}
+  .clist{list-style:none;display:flex;flex-direction:column;gap:10px}
+  .clist li{display:flex;gap:11px;align-items:flex-start;color:var(--ink2);font-size:14.5px;line-height:1.5}
+  .clist li .ck{flex:none;width:21px;height:21px;border-radius:6px;background:var(--o-pale);color:var(--o-dark);
+       display:grid;place-items:center;font-size:12px;font-weight:800;margin-top:1px}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-top:6px}
+  .gallery img{width:100%;height:120px;object-fit:cover;border-radius:12px;border:1px solid var(--line2);cursor:pointer;transition:.15s}
+  .gallery img:hover{transform:scale(1.02);border-color:var(--o)}
+  /* ---------- Bild-Karussell (Swipe mobil / Pfeile Desktop) ---------- */
+  .carousel{position:relative;margin-top:6px}
+  .carousel-track{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;
+        -webkit-overflow-scrolling:touch;scrollbar-width:none;border-radius:14px}
+  .carousel-track::-webkit-scrollbar{display:none}
+  .carousel-track img{flex:0 0 100%;width:100%;height:300px;object-fit:cover;border-radius:14px;border:1px solid var(--line2);
+        scroll-snap-align:center;cursor:zoom-in}
+  .carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;
+        background:rgba(255,255,255,.95);border:1px solid var(--line);box-shadow:0 4px 14px rgba(0,0,0,.18);
+        display:grid;place-items:center;cursor:pointer;font-size:22px;line-height:1;color:var(--ink);z-index:3;transition:.14s}
+  .carousel-arrow:hover{background:#fff;border-color:var(--o);color:var(--o-dark)}
+  .carousel-arrow.prev{left:10px}.carousel-arrow.next{right:10px}
+  .carousel-dots{display:flex;justify-content:center;gap:6px;margin-top:11px}
+  .carousel-dots .dot{width:7px;height:7px;border-radius:50%;background:var(--line);transition:.18s;cursor:pointer}
+  .carousel-dots .dot.on{background:var(--o);width:20px;border-radius:4px}
+  @media(hover:none){.carousel-arrow{display:none}}
+  @media(max-width:560px){.carousel-track img{height:220px}}
+  .ustats{display:flex;gap:12px;flex-wrap:wrap;margin:4px 0 6px}
+  .ustat{flex:1;min-width:130px;background:var(--bg);border:1px solid var(--line2);border-radius:12px;padding:14px 16px}
+  .ustat b{display:block;font-size:21px;font-weight:820;color:var(--ink);letter-spacing:-.3px}
+  .ustat span{font-size:12.5px;color:var(--muted);font-weight:600}
+  .karriere-btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;font-weight:700;
+       font-size:14px;padding:11px 18px;border-radius:10px;margin-top:8px;transition:.15s}
+  .karriere-btn:hover{background:#000}
+  .dt-map{margin-top:14px;border-radius:12px;overflow:hidden;border:1px solid var(--line2);height:240px}
+  .dt-map iframe{width:100%;height:100%;border:0;display:block}
+  .lb{position:fixed;inset:0;background:rgba(10,12,14,.88);display:none;align-items:center;justify-content:center;
+      z-index:100;padding:30px;cursor:zoom-out}
+  .lb.on{display:flex}
+  .lb img{max-width:92vw;max-height:90vh;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+  .aside{position:sticky;top:84px;display:flex;flex-direction:column;gap:16px}
+  .apply-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+  .apply-card h3{font-size:18px;font-weight:800;letter-spacing:-.3px}
+  .apply-card .sub{color:var(--muted);font-size:13.5px;margin:4px 0 16px}
+  .field{margin-bottom:12px}
+  .field label{display:block;font-size:13px;font-weight:600;color:var(--ink2);margin-bottom:5px}
+  .field input,.field textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:11px 13px;
+       font-size:14.5px;font-family:inherit;color:var(--ink);background:#fff;outline:none;transition:.14s}
+  .field input:focus,.field textarea:focus{border-color:var(--o);box-shadow:0 0 0 3px rgba(22,163,74,.12)}
+  .field textarea{min-height:80px;resize:vertical}
+  .btn-apply{width:100%;background:var(--grad);color:#fff;font-weight:740;font-size:15.5px;border:0;
+            border-radius:11px;padding:14px;cursor:pointer;transition:.15s;box-shadow:0 6px 18px rgba(22,163,74,.3)}
+  .btn-apply:hover{filter:brightness(1.05)}
+  .btn-apply:disabled{opacity:.6;cursor:default}
+  .consent{font-size:11.5px;color:var(--muted);margin-top:11px;line-height:1.45}
+  .consent a{color:var(--o-dark);text-decoration:underline}
+  .firma-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+  .firma-card .row{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--ink2);margin-top:8px}
+  .firma-card .row .d{color:var(--o);width:18px;text-align:center}
+  .ap-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+  .ap-card .ap-h{font-size:12.5px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+  .ap-top{display:flex;align-items:center;gap:13px}
+  .ap-foto{width:54px;height:54px;border-radius:50%;object-fit:cover;flex:none;background:var(--o-pale);
+       color:var(--o-dark);display:grid;place-items:center;font-weight:800;font-size:18px;border:1px solid var(--line2)}
+  .ap-card .ap-name{font-weight:780;font-size:15.5px;letter-spacing:-.2px}
+  .ap-card .ap-rolle{color:var(--muted);font-size:13px;font-weight:600}
+  .ap-card .row{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--ink2);margin-top:9px}
+  .ap-card .row .d{color:var(--o);width:18px;text-align:center}
+  .ap-card .row a{color:var(--o-dark)}
+  /* ---------- Tier (Smart / Premium / Exzellenz) ---------- */
+  .dt-tier{position:absolute;top:14px;right:14px;z-index:4;font-weight:800;font-size:12px;letter-spacing:.3px;
+        padding:6px 13px;border-radius:100px;background:#FFB020;color:#3a2600;
+        box-shadow:0 4px 14px rgba(0,0,0,.22);display:flex;align-items:center;gap:5px}
+  .dt-tier.exc{background:linear-gradient(135deg,#166534,#14532D);color:#fff}
+  .dt-tier.prem{background:linear-gradient(135deg,#FFC24D,#FF9F1A);color:#3a2600}
+  .perk-card,.proc-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+        padding:20px;box-shadow:var(--shadow)}
+  .perk-card.exc{border-color:#E8C9A8;box-shadow:0 8px 28px rgba(22,101,52,.12)}
+  .perk-card.prem{border-color:#FAD9C2}
+  .perk-tier{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:800;letter-spacing:.4px;
+        text-transform:uppercase;padding:5px 11px;border-radius:100px;margin-bottom:14px;
+        background:#FFF3D6;color:#92600A}
+  .perk-card.exc .perk-tier{background:#F1EAFE;color:#14532D}
+  .perk-card.prem .perk-tier{background:var(--o-pale);color:var(--o-dark)}
+  .perk-tier.basis{background:var(--ok-bg);color:var(--ok)}
+  .perk-h{font-size:12.5px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;color:var(--muted);margin-bottom:13px}
+  .perk-list{list-style:none;display:flex;flex-direction:column;gap:14px}
+  .perk-list li{display:flex;gap:12px;align-items:flex-start}
+  .perk-list .pk-i{flex:none;width:30px;height:30px;border-radius:9px;background:var(--bg);border:1px solid var(--line2);
+        display:grid;place-items:center;font-size:15px}
+  .perk-list li b{display:block;font-size:14px;font-weight:740;color:var(--ink);letter-spacing:-.1px}
+  .perk-list li span{display:block;font-size:12.8px;color:var(--muted);line-height:1.5;margin-top:2px}
+  .proc-list{list-style:none;display:flex;flex-direction:column;gap:4px;counter-reset:none}
+  .proc-list li{display:flex;gap:13px;align-items:flex-start;padding:9px 0;position:relative}
+  .proc-list li:not(:last-child)::after{content:"";position:absolute;left:14px;top:34px;bottom:-2px;width:2px;
+        background:var(--line2)}
+  .proc-list .ps-n{flex:none;width:29px;height:29px;border-radius:50%;background:var(--o-pale);color:var(--o-dark);
+        display:grid;place-items:center;font-weight:800;font-size:13.5px;border:1px solid #FAD9C2;z-index:1}
+  .proc-list li b{display:block;font-size:14px;font-weight:730;color:var(--ink)}
+  .proc-list li span{display:block;font-size:12.8px;color:var(--muted);line-height:1.5;margin-top:2px}
+  .applied{text-align:center;padding:8px 0}
+  .applied .big{width:58px;height:58px;border-radius:50%;background:var(--ok-bg);color:var(--ok);font-size:28px;
+       display:grid;place-items:center;margin:0 auto 14px}
+  .applied h3{font-size:19px;font-weight:800;margin-bottom:6px}
+  .applied p{color:var(--muted);font-size:14px}
+  .err{background:var(--o-pale);border:1px solid #FAD9C2;color:var(--o-dark);font-size:13px;font-weight:600;
+       padding:10px 13px;border-radius:9px;margin-bottom:12px;display:none}
+
+  /* ---------- FAQ ---------- */
+  .faq{padding:54px 0 10px;background:#fff;border-top:1px solid var(--line)}
+  .faq .fh{text-align:center;max-width:640px;margin:0 auto 30px}
+  .faq .fh h2{font-size:clamp(24px,3.6vw,33px);font-weight:830;letter-spacing:-.6px}
+  .faq .fh p{color:var(--muted);font-size:15.5px;margin-top:8px}
+  .faq-list{max-width:780px;margin:0 auto}
+  .faq-item{border:1px solid var(--line);border-radius:14px;margin-bottom:11px;overflow:hidden;background:var(--card);transition:.16s}
+  .faq-item.open{border-color:var(--o);box-shadow:0 6px 22px rgba(22,163,74,.1)}
+  .faq-q{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 20px;cursor:pointer;
+        font-weight:730;font-size:16px;color:var(--ink);user-select:none}
+  .faq-q .pm{flex:none;width:26px;height:26px;border-radius:8px;background:var(--o-pale);color:var(--o-dark);
+        display:grid;place-items:center;font-size:18px;font-weight:700;transition:.2s}
+  .faq-item.open .faq-q .pm{transform:rotate(45deg)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease}
+  .faq-a .inner{padding:0 20px 18px;color:var(--ink2);font-size:15px;line-height:1.65}
+  .faq-cta{text-align:center;margin-top:26px;color:var(--muted);font-size:14.5px}
+  .faq-cta a{color:var(--o-dark);font-weight:700}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--dark);color:#9AA2AB;padding:40px 0;font-size:13.5px}
+  footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+  footer .fbrand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700}
+  footer .flinks{display:flex;gap:20px;flex-wrap:wrap}
+  footer .flinks a:hover{color:#fff}
+  .powered{font-size:12px;color:#6B7480;margin-top:6px}
+
+  @media(max-width:980px){
+    .layout{grid-template-columns:1fr}
+    .fbar{position:static}
+    .filterToggle{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);
+        color:var(--ink2);font-weight:700;font-size:14px;padding:11px 16px;border-radius:10px;cursor:pointer;margin-bottom:14px}
+    .fbar.collapsed{display:none}
+  }
+  @media(max-width:880px){
+    .dt-grid{grid-template-columns:1fr}
+    .aside{position:static}
+    .dt-grid>.dt-main,.dt-grid>.aside,.dt-grid>.related{grid-column:1;grid-row:auto}
+    .dt-grid>.related{margin-top:18px}
+  }
+  @media(max-width:860px){
+    .nav-links{display:none}
+    .burger{display:flex}
+  }
+  @media(max-width:560px){
+    .hero .wrap{padding:48px 22px 56px}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:28px}
+    .stat b{font-size:clamp(17px,5.6vw,24px)}
+    .stat span{font-size:clamp(9.5px,2.7vw,12px);line-height:1.2;display:block}
+    .nav-cta{display:none}
+    .fcard{flex-basis:280px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand" onclick="goHome()">
+      <div class="logo">GC</div>
+      <div class="bname">GreenCareers<small>Garten- &amp; Landschaftsbau</small></div>
+    </div>
+    <div class="sp"></div>
+    <nav class="nav-links">
+      <span class="nav-link" onclick="goJobs()">Stellen</span>
+      <div class="nav-drop">
+        <span class="nav-link">Gewerke <span class="car">▾</span></span>
+        <div class="nav-menu" id="navBranchen">
+          <a onclick="filterBranche('Garten- &amp; Landschaftsbau')"><span class="mi">🌿</span> Garten- &amp; Landschaftsbau</a>
+          <a onclick="filterBranche('Pflasterbau')"><span class="mi">🧱</span> Pflaster- &amp; Wegebau</a>
+          <a onclick="filterBranche('Gartenpflege')"><span class="mi">🌱</span> Garten- &amp; Grünpflege</a>
+          <a onclick="filterBranche('Baumpflege')"><span class="mi">🌳</span> Baumpflege</a>
+          <a onclick="filterBranche('Pflanzung')"><span class="mi">🌾</span> Pflanzung &amp; Begrünung</a>
+          <a onclick="goJobs()"><span class="mi">📋</span> Alle Stellen</a>
+        </div>
+      </div>
+      <span class="nav-link" onclick="goFaq()">FAQ</span>
+    </nav>
+    <a class="nav-cta" href="https://os.green-careers.de/?brand=green">Für Arbeitgeber</a>
+    <button class="burger" id="burger" onclick="toggleDrawer()" aria-label="Menü"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- Mobile Drawer -->
+<div class="scrim" id="scrim" onclick="closeDrawer()"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-head">
+    <div class="brand" onclick="closeDrawer();goHome()">
+      <div class="logo" style="width:34px;height:34px;font-size:16px">GC</div>
+      <div class="bname" style="font-size:15px">GreenCareers<small>Garten- &amp; Landschaftsbau</small></div>
+    </div>
+    <button class="x" onclick="closeDrawer()" aria-label="Schließen">✕</button>
+  </div>
+  <div class="drawer-body">
+    <a onclick="closeDrawer();goJobs()"><span class="mi">📋</span> Alle Stellen</a>
+    <a onclick="closeDrawer();goFaq()"><span class="mi">❓</span> FAQ</a>
+    <div class="drawer-lbl">Gewerke</div>
+    <div class="drawer-sub">
+      <a onclick="closeDrawer();filterBranche('Garten- &amp; Landschaftsbau')">🌿 Garten- &amp; Landschaftsbau</a>
+      <a onclick="closeDrawer();filterBranche('Pflasterbau')">🧱 Pflaster- &amp; Wegebau</a>
+      <a onclick="closeDrawer();filterBranche('Gartenpflege')">🌱 Garten- &amp; Grünpflege</a>
+      <a onclick="closeDrawer();filterBranche('Baumpflege')">🌳 Baumpflege</a>
+      <a onclick="closeDrawer();filterBranche('Pflanzung')">🌾 Pflanzung &amp; Begrünung</a>
+    </div>
+    <a class="drawer-cta" href="https://os.green-careers.de/?brand=green">Für Arbeitgeber →</a>
+  </div>
+</aside>
+
+<!-- ============ JOB-QUIZ ============ -->
+<div class="quiz-ov" id="quizOv" onclick="if(event.target===this)quizClose()">
+  <div class="quiz-box" role="dialog" aria-modal="true" aria-label="Job-Finder">
+    <button class="quiz-x" onclick="quizClose()" aria-label="Schließen">✕</button>
+    <div class="quiz-prog"><span class="quiz-prog-bar" id="quizBar"></span></div>
+
+    <!-- Schritt 1: Beruf -->
+    <div class="quiz-step" data-step="1">
+      <span class="quiz-eyebrow">Frage 1 von 3</span>
+      <h3>Welcher Beruf passt zu dir?</h3>
+      <p class="quiz-sub">Wähle deine Berufe – bis zu 5. Wir suchen passende Stellen dafür. Nichts Passendes dabei? Tippe ihn einfach unten ein.</p>
+      <div class="quiz-chips" id="quizBerufe">
+        <button class="qchip" onclick="quizPickBeruf(this,'Helfer GaLaBau')">🧰 Helfer / Bauhelfer GaLaBau</button>
+        <button class="qchip" onclick="quizPickBeruf(this,'Landschaftsgärtner')">🌿 Landschaftsgärtner</button>
+        <button class="qchip" onclick="quizPickBeruf(this,'Garten- und Landschaftsbauer')">🌳 Garten- &amp; Landschaftsbauer</button>
+        <button class="qchip" onclick="quizPickBeruf(this,'Pflasterer')">🧱 Pflasterer</button>
+        <button class="qchip" onclick="quizPickBeruf(this,'Gärtner')">🌱 Gärtner / Gartenpfleger</button>
+        <button class="qchip" onclick="quizPickBeruf(this,'Baumpfleger')">🪚 Baumpfleger / Baumkletterer</button>
+        <button class="qchip" onclick="quizPickBeruf(this,'Pflanzfacharbeiter')">🌾 Pflanz- / Begrünungsfacharbeiter</button>
+        <button class="qchip" onclick="quizPickBeruf(this,'Baugeräteführer')">🚜 Baugeräte-/Baumaschinenführer</button>
+        <button class="qchip" onclick="quizPickBeruf(this,'Baggerfahrer')">⛏️ Baggerfahrer</button>
+        <button class="qchip" onclick="quizPickBeruf(this,'Kraftfahrer')">🚛 Berufskraftfahrer / LKW-Fahrer</button>
+        <button class="qchip" onclick="quizPickBeruf(this,'Meister GaLaBau')">🎓 Meister GaLaBau</button>
+        <button class="qchip" onclick="quizPickBeruf(this,'Vorarbeiter')">📐 Vorarbeiter / Kolonnenführer</button>
+        <button class="qchip" onclick="quizPickBeruf(this,'Polier')">📋 Polier</button>
+        <button class="qchip" onclick="quizPickBeruf(this,'Bauleiter GaLaBau')">🗂️ Bauleiter GaLaBau</button>
+        <button class="qchip" onclick="quizPickBeruf(this,'Techniker')">📊 Techniker / Bauingenieur</button>
+        <button class="qchip" onclick="quizPickBeruf(this,'Auszubildender')">🎒 Auszubildende:r GaLaBau</button>
+      </div>
+      <div class="quiz-other">
+        <input id="quizBerufOther" type="text" placeholder="Anderer Beruf? Hier eintippen…" oninput="quizOtherBeruf(this.value)">
+      </div>
+      <div class="quiz-bcount" id="quizBerufCnt"></div>
+    </div>
+
+    <!-- Schritt 2: PLZ -->
+    <div class="quiz-step" data-step="2" hidden>
+      <span class="quiz-eyebrow">Frage 2 von 3</span>
+      <h3>Wo suchst du?</h3>
+      <p class="quiz-sub">Deine Postleitzahl – wir zeigen dir die Stellen, die am nächsten an dir dran sind.</p>
+      <input class="quiz-plz" id="quizPlz" type="text" inputmode="numeric" maxlength="5" placeholder="z.B. 06108" oninput="quizPlzInput(this.value)">
+      <div class="quiz-plz-hint" id="quizPlzHint">5-stellige PLZ eingeben</div>
+    </div>
+
+    <!-- Schritt 3: Erfahrung -->
+    <div class="quiz-step" data-step="3" hidden>
+      <span class="quiz-eyebrow">Frage 3 von 3</span>
+      <h3>Wie viel Erfahrung bringst du mit?</h3>
+      <p class="quiz-sub">Hilft uns, dich noch besser einzuordnen.</p>
+      <div class="quiz-chips">
+        <button class="qchip" onclick="quizPickErf(this,'Berufseinsteiger / Azubi')">Berufseinsteiger / Azubi</button>
+        <button class="qchip" onclick="quizPickErf(this,'Quereinsteiger mit relevanter Berufserfahrung')">Quereinsteiger mit relevanter Berufserfahrung</button>
+        <button class="qchip" onclick="quizPickErf(this,'1–3 Jahre')">1–3 Jahre</button>
+        <button class="qchip" onclick="quizPickErf(this,'3–10 Jahre')">3–10 Jahre</button>
+        <button class="qchip" onclick="quizPickErf(this,'10+ Jahre / Meister')">10+ Jahre / Meister</button>
+      </div>
+    </div>
+
+    <!-- Schritt 4: Ergebnis + Bewerberpool/Job-Abo -->
+    <div class="quiz-step quiz-result" data-step="4" hidden>
+      <div class="quiz-result-head">
+        <span class="quiz-eyebrow" id="quizResultEyebrow">Deine Treffer</span>
+        <h3 id="quizResultTitle">Die perfekten Jobs in deiner Nähe</h3>
+        <p class="quiz-sub" id="quizResultSub">Nach Nähe sortiert – die nächstgelegene zuerst.</p>
+      </div>
+
+      <div class="quiz-jobs" id="quizJobs"></div>
+      <button class="quiz-allbtn" onclick="quizShowJobs()" id="quizAllBtn">Alle Stellen im Portal ansehen →</button>
+
+      <div class="quiz-abo" id="quizAbo">
+        <div class="quiz-abo-head">
+          <span class="quiz-abo-ic">⚡</span>
+          <div>
+            <b>Nichts Passendes dabei? Sei beim nächsten Mal der Erste.</b>
+            <small>Erhalte <strong>sofort nach Erscheinen</strong> die besten Jobangebote von exklusiven, geprüften Top-Arbeitgebern aus deiner Region – <strong>bevor es alle anderen erfahren.</strong> Kostenlos, direkt aufs Handy.</small>
+          </div>
+        </div>
+        <div class="quiz-perks">
+          <span class="qperk">🔒 Exklusiv &amp; geprüft</span>
+          <span class="qperk">⏱️ Als Erster informiert</span>
+          <span class="qperk">📲 Direkt aufs Handy</span>
+          <span class="qperk">🎁 100% kostenlos</span>
+        </div>
+        <div id="quizAboForm">
+          <div class="quiz-row">
+            <input class="quiz-input" id="quizVorname" type="text" placeholder="Vorname">
+            <input class="quiz-input" id="quizNachname" type="text" placeholder="Nachname">
+          </div>
+          <input class="quiz-input" id="quizEmail" type="email" placeholder="E-Mail-Adresse">
+          <input class="quiz-input" id="quizTel" type="tel" placeholder="Telefon- / WhatsApp-Nummer">
+          <div class="quiz-kanal">
+            <span class="quiz-kanal-lbl">Wie sollen wir dir die Jobs schicken?</span>
+            <div class="quiz-kanal-opts">
+              <button type="button" class="qkanal sel" id="qkEmail" onclick="quizPickKanal('email')">✉️ Per E-Mail</button>
+              <button type="button" class="qkanal" id="qkWa" onclick="quizPickKanal('whatsapp')">💬 Per WhatsApp</button>
+            </div>
+          </div>
+          <label class="quiz-consent">
+            <input type="checkbox" id="quizConsent">
+            <span>Ich möchte kostenlos passende Top-Jobangebote erhalten und stimme der <a href="datenschutz.html" target="_blank" rel="noopener">Datenschutzerklärung</a> zu. Abmeldung jederzeit möglich.</span>
+          </label>
+          <button class="quiz-abo-btn" id="quizAboBtn" onclick="quizSubmitAbo()">Ja, ich will die besten Jobs zuerst →</button>
+          <div class="quiz-abo-msg" id="quizAboMsg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quiz-nav">
+      <button class="quiz-back" id="quizBack" onclick="quizPrev()" hidden>← Zurück</button>
+      <button class="quiz-next" id="quizNext" onclick="quizNext()" disabled>Weiter →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HOME ============ -->
+<div id="home">
+  <section class="hero">
+    <img class="hero-bg" src="assets/hero.jpg" alt="" loading="eager">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <span class="kicker">● Karrierenetzwerk für den Garten- &amp; Landschaftsbau</span>
+          <h1>Dein nächster Job im<br class="mobr"><span class="twline"><span class="tw" id="twWord">GaLaBau</span><span class="caret"></span></span><br>Bei Betrieben, die zu dir passen.</h1>
+          <p>Aktuelle Stellen bei geprüften GaLaBau-Betrieben in deiner Region. Ein Profil, direkt bewerben – ohne Anschreiben-Marathon.</p>
+          <button class="quiz-launch" onclick="quizOpen()">
+            <span class="ql-ic">🎯</span>
+            <span class="ql-tx"><b>Finde deinen Job in 30 Sekunden</b><small>3 kurze Fragen – wir zeigen dir passende Stellen in deiner Nähe</small></span>
+            <span class="ql-arrow">→</span>
+          </button>
+          <div class="hero-altlbl">oder direkt im Stellenmarkt suchen</div>
+          <div class="hero-search">
+            <input id="q" type="text" placeholder="Beruf, Position oder Ort suchen…" oninput="applyFilter()">
+            <button onclick="document.getElementById('jobsAnchor').scrollIntoView({behavior:'smooth'})">Jobs ansehen</button>
+          </div>
+          <div class="stats">
+            <div class="stat"><b>100%</b><span>kostenlos für Bewerber</span></div>
+            <div class="stat"><b>2 Min</b><span>bis zur Bewerbung</span></div>
+            <div class="stat"><b>0 €</b><span>keine Anmeldegebühr</span></div>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="tl-card">
+            <div class="tl-head">
+              <span class="tl-dot"></span>
+              <div>
+                <div class="tl-title">Von der Anzeige zur Einstellung</div>
+                <div class="tl-sub">So schnell läuft Fachkräftegewinnung über GreenCareers</div>
+              </div>
+            </div>
+            <div class="tl-list" id="tlList">
+              <div class="tl-step"><span class="tl-check">✓</span><div class="tl-txt"><b>Stelle anlegen</b><span>Anzeige in Minuten erstellt</span></div><span class="tl-time">15 Min</span></div>
+              <div class="tl-step"><span class="tl-check">✓</span><div class="tl-txt"><b>Stelle live geschaltet</b><span>Sichtbar für passende Fachkräfte</span></div><span class="tl-time">15 Min</span></div>
+              <div class="tl-step"><span class="tl-check">✓</span><div class="tl-txt"><b>Erste Bewerbung</b><span>Direkt aus deiner Region</span></div><span class="tl-time">48 Std</span></div>
+              <div class="tl-step"><span class="tl-check">✓</span><div class="tl-txt"><b>Erste Gespräche</b><span>Vorqualifizierte Kandidaten</span></div><span class="tl-time">7–14 Tage</span></div>
+              <div class="tl-step"><span class="tl-check">✓</span><div class="tl-txt"><b>Einstellung</b><span>Neuer Mitarbeiter an Bord</span></div><span class="tl-time">30–60 Tage</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner-Logo-Slider -->
+  <div class="pslider" id="pslider" style="display:none">
+    <div class="ptrack" id="ptrack"></div>
+  </div>
+
+  <div class="trust">
+    <div class="wrap">
+      <div class="t-pill"><span class="t-ic">🔒</span><span class="t-tx"><b>Kostenlos &amp; anonym</b><span>Dein Profil sehen nur Betriebe, die zu dir passen.</span></span></div>
+      <div class="t-pill"><span class="t-ic">🛡️</span><span class="t-tx"><b>Nur geprüfte Betriebe</b><span>Echte Arbeitgeber aus dem Garten- &amp; Landschaftsbau.</span></span></div>
+      <div class="t-pill"><span class="t-ic">📩</span><span class="t-tx"><b>Betriebe melden sich</b><span>Du wartest nicht – passende Firmen schreiben dich an.</span></span></div>
+    </div>
+  </div>
+
+  <!-- SEO intro -->
+  <section class="seo">
+    <div class="wrap">
+      <div class="lead">
+        <h2>Das Stellennetzwerk<br class="dbr"> für den <b>Garten- &amp; Landschaftsbau</b>.</h2>
+        <p>Ob Pflasterarbeiten, Pflanzung, Gartenpflege, Baumpflege oder Wegebau: Auf der Baustelle entscheidet das Team. Wir bringen GaLaBau-Betriebe mit den Fachkräften zusammen, die wirklich anpacken – vom Landschaftsgärtner und Pflasterer über den Vorarbeiter bis zum Polier und Bauleiter.</p>
+        <p>Für Betriebe heißt das: qualifizierte Bewerbungen aus der eigenen Region, ohne monatelange Suche und ohne Anzeigen-Chaos. Für Fachkräfte heißt es: ein Profil, geprüfte Arbeitgeber und eine Bewerbung, die in zwei Minuten raus ist – ganz ohne Anschreiben-Marathon.</p>
+      </div>
+      <div class="seo-grid">
+        <div class="seo-card"><div class="ic">🌿</div><h3>Spezialisiert auf GaLaBau</h3><p>Garten- &amp; Landschaftsbau, Pflasterbau, Pflege und Pflanzung – keine fachfremde Streuung. Hier suchen Menschen genau Ihre Gewerke.</p></div>
+        <div class="seo-card"><div class="ic">📍</div><h3>Regional sortiert</h3><p>Stellen werden nach Postleitzahl ausgespielt. Wer in der Nähe wohnt, sieht Ihren Betrieb zuerst.</p></div>
+        <div class="seo-card"><div class="ic">⚡</div><h3>Bewerbung in 2 Minuten</h3><p>Ein Profil, ein Klick. Weniger Hürden für Bewerber bedeuten mehr echte Bewerbungen für Sie.</p></div>
+        <div class="seo-card"><div class="ic">✓</div><h3>Geprüfte Arbeitgeber</h3><p>Betriebe aus dem ganzen Bundesgebiet vertrauen unserem Karrierenetzwerk für den Garten- &amp; Landschaftsbau.</p></div>
+      </div>
+      <div class="seo-cta">
+        <a class="btn-o" href="https://os.green-careers.de/?brand=green">Als Arbeitgeber Stellen schalten</a>
+        <a class="btn-ghost" href="#jobsAnchor" onclick="document.getElementById('jobsAnchor').scrollIntoView({behavior:'smooth'});return false;">Offene Stellen ansehen ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gewerke im Garten- & Landschaftsbau -->
+  <section class="berufe">
+    <div class="wrap">
+      <div class="berufe-head">
+        <span class="eyebrow">Gewerke im Garten- &amp; Landschaftsbau</span>
+        <h2>In welchem Gewerk suchst du einen Job?</h2>
+        <p>Wähle dein Gewerk – wir zeigen dir sofort die passenden Stellen von geprüften Betrieben aus deiner Region, die nächstgelegenen zuerst.</p>
+      </div>
+      <div class="gewerke-grid">
+        <a class="gewerk" onclick="filterBranche('Garten- &amp; Landschaftsbau')"><span class="gw-ic">🌿</span>Garten- &amp; Landschaftsbau<span class="gw-arrow">→</span></a>
+        <a class="gewerk" onclick="filterBranche('Pflasterbau')"><span class="gw-ic">🧱</span>Pflaster- &amp; Wegebau<span class="gw-arrow">→</span></a>
+        <a class="gewerk" onclick="filterBranche('Gartenpflege')"><span class="gw-ic">🌱</span>Garten- &amp; Grünpflege<span class="gw-arrow">→</span></a>
+        <a class="gewerk" onclick="filterBranche('Baumpflege')"><span class="gw-ic">🌳</span>Baumpflege<span class="gw-arrow">→</span></a>
+        <a class="gewerk" onclick="filterBranche('Pflanzung')"><span class="gw-ic">🌾</span>Pflanzung &amp; Begrünung<span class="gw-arrow">→</span></a>
+        <a class="gewerk" onclick="filterBranche('Erdbau')"><span class="gw-ic">⛏️</span>Erd- &amp; Tiefbau<span class="gw-arrow">→</span></a>
+        <a class="gewerk" onclick="filterBranche('Teichbau')"><span class="gw-ic">💧</span>Teich- &amp; Wasserbau<span class="gw-arrow">→</span></a>
+        <a class="gewerk" onclick="filterBranche('Zaunbau')"><span class="gw-ic">🪵</span>Zaun- &amp; Sichtschutzbau<span class="gw-arrow">→</span></a>
+        <a class="gewerk" onclick="filterBranche('Baumaschinen')"><span class="gw-ic">🚜</span>Baugeräte &amp; Maschinen<span class="gw-arrow">→</span></a>
+        <a class="gewerk" onclick="filterBranche('Sportplatzbau')"><span class="gw-ic">⚽</span>Sport- &amp; Spielplatzbau<span class="gw-arrow">→</span></a>
+        <a class="gewerk" onclick="filterBranche('Dachbegrünung')"><span class="gw-ic">🏢</span>Dach- &amp; Fassadenbegrünung<span class="gw-arrow">→</span></a>
+        <a class="gewerk" onclick="filterBranche('Winterdienst')"><span class="gw-ic">❄️</span>Winterdienst<span class="gw-arrow">→</span></a>
+        <a class="gewerk" onclick="filterBranche('Bauleitung')"><span class="gw-ic">🗂️</span>Bauleitung &amp; Polier<span class="gw-arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- So funktioniert's: 3 Schritte für Bewerber -->
+  <section class="steps">
+    <div class="wrap">
+      <div class="steps-head">
+        <span class="eyebrow">So einfach geht's</span>
+        <h2>In 3 Schritten zu deinem neuen Job</h2>
+        <p>Kein Anschreiben, kein wochenlanges Suchen. Du legst einmal dein Profil an – den Rest übernehmen wir und die Betriebe.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>Profil in 2 Minuten anlegen</h3>
+          <p>Beruf, Erfahrung und deine Region eintragen. Ohne Lebenslauf-Marathon, ohne Anschreiben – einmal ausfüllen, fertig.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>Passende Betriebe finden dich</h3>
+          <p>Geprüfte GaLaBau-Betriebe aus deiner Nähe sehen dein Profil und melden sich direkt bei dir.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>Kennenlernen &amp; durchstarten</h3>
+          <p>Du entscheidest, mit wem du sprichst. Vom ersten Kontakt bis zum Vertrag – alles ohne Bewerbungsstress.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium/Excellence Banner -->
+  <section class="feat" id="featSec" style="display:none">
+    <div class="wrap">
+      <div class="feat-head"><h2>Unsere Favoriten</h2><span class="tg">Premium &amp; Exzellenz</span></div>
+      <div class="feat-row" id="featRow"></div>
+    </div>
+  </section>
+
+  <main>
+    <div class="wrap">
+      <span id="jobsAnchor"></span>
+      <div class="secthead">
+        <h2>Aktuelle Stellen</h2><p id="resultInfo">Lädt…</p>
+      </div>
+      <button class="filterToggle" onclick="document.getElementById('fbar').classList.toggle('collapsed')">☰ Filter</button>
+      <div class="layout">
+        <aside class="fbar" id="fbar"></aside>
+        <div id="list">
+          <div class="loading"><div class="spinner"></div>Stellen werden geladen…</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FAQ -->
+  <section class="faq" id="faqSec">
+    <div class="wrap">
+      <div class="fh">
+        <h2>Häufige Fragen</h2>
+        <p>Alles, was du zur Bewerbung über das GaLaBau-Karrierenetzwerk wissen musst.</p>
+      </div>
+      <div class="faq-list" id="faqList"></div>
+      <div class="faq-cta">Noch Fragen? Schreib uns an <a href="mailto:hello@green-careers.de">hello@green-careers.de</a> oder ruf an: <a href="tel:+4922196882408">+49 221 9688 2408</a>.</div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ DETAIL ============ -->
+<div class="detail" id="detail"><div class="wrap" id="detailInner"></div></div>
+
+<!-- Lightbox -->
+<div class="lb" id="lb" onclick="closeLb()"><img id="lbImg" src="" alt=""></div>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="fbrand"><div class="logo" style="width:32px;height:32px;font-size:15px">GC</div> GreenCareers · Garten- &amp; Landschaftsbau</div>
+      <div class="powered">Ein Angebot der GreenCareers GmbH</div>
+    </div>
+    <div class="flinks">
+      <a href="#faqSec" onclick="goFaq();return false;">FAQ</a>
+      <a href="https://os.green-careers.de/?brand=green">Für Arbeitgeber</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="agb.html">AGB</a>
+      <a href="#" onclick="gcCookieSettings();return false;">Cookie-Einstellungen</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script>
+const SUPABASE_URL  = 'https://tfoopogxaqvfwbonabpi.supabase.co';
+const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRmb29wb2d4YXF2Zndib25hYnBpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEyNTQzMjQsImV4cCI6MjA5NjgzMDMyNH0.udWRPszXVOj7EG4bspmsU9HXbZYFRDn8QO9kZi2tw8M';
+const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
+
+let JOBS = [];                 // alle geladenen Stellen
+let SEL_BRANCHE = new Set();   // aktive Branchen-Filter
+let SEL_BERUF   = new Set();   // aktive Berufs-Filter
+let SEL_ART     = new Set();   // aktive Beschaeftigungsart-Filter
+let SEARCH_GEO  = null;        // {lat,lon} der gesuchten PLZ
+let RADIUS      = 0;           // km, 0 = ganz Deutschland
+
+const ART_STD = ['Vollzeit','Teilzeit','Minijob','Ausbildung'];
+
+/* Kanonische Sub-Branchen (Reihenfolge = Anzeige). Eine Stelle "gehoert" zu einer
+   Branche, wenn ihr branche-Feld passt ODER Titel/Beschreibung das Stichwort enthaelt.
+   So bleibt der Filter auch bei duennen branche-Feldern aussagekraeftig. */
+const BRANCHE_STD = ['Garten- & Landschaftsbau','Pflasterbau','Gartenpflege','Baumpflege','Pflanzung','Erdbau','Teichbau','Zaunbau'];
+const BRANCHE_KEYS = {
+  'Garten- & Landschaftsbau':['garten- und landschaftsbau','garten- & landschaftsbau','landschaftsbau','galabau','landschaftsgärtner','landschaftsgaertner','gartenbau','garten'],
+  'Pflasterbau':['pflaster','wegebau','wege','naturstein'],
+  'Gartenpflege':['gartenpflege','grünpflege','gruenpflege','grünflächenpflege','grünflaeche','pflege'],
+  'Baumpflege':['baumpflege','baumpfleger','baumkletter','baumfäll','baumfaell','baumservice'],
+  'Pflanzung':['pflanzung','pflanz','begrünung','begruenung','bepflanzung','dachbegrünung'],
+  'Erdbau':['erdbau','erdarbeit','aushub','bagger','tiefbau'],
+  'Teichbau':['teich','wasserbau','wasser','schwimmteich'],
+  'Zaunbau':['zaun','sichtschutz','zaunbau'],
+};
+function jobMatchesBranche(j,b){
+  if((j.branche||'').toLowerCase().includes(b.toLowerCase())) return true;
+  const hay=((j.titel||'')+' '+(j.branche||'')+' '+(j.beschreibung||'')).toLowerCase();
+  return (BRANCHE_KEYS[b]||[]).some(k=>hay.includes(k));
+}
+
+const esc = s => (s==null?'':String(s)).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const $  = id => document.getElementById(id);
+
+function initials(name){return (name||'?').trim().split(/\s+/).slice(0,2).map(w=>w[0]).join('').toUpperCase();}
+function ago(ts){
+  if(!ts) return '';
+  const d=Math.floor((Date.now()-new Date(ts))/86400000);
+  if(d<=0) return 'heute';
+  if(d===1) return 'gestern';
+  if(d<7) return 'vor '+d+' Tagen';
+  if(d<14) return 'vor 1 Woche';
+  return 'vor '+Math.floor(d/7)+' Wochen';
+}
+function fav(j){
+  return j.firma_logo
+    ? '<div class="fav"><img src="'+esc(j.firma_logo)+'" alt=""></div>'
+    : '<div class="fav">'+esc(initials(j.firma))+'</div>';
+}
+function coverUrl(j){
+  const arr=Array.isArray(j.stellen_bilder)?j.stellen_bilder.filter(Boolean):[];
+  return arr[0] || j.firma_titelbild || '';
+}
+function tier(j){
+  const p=(j.firma_produkt||'').toLowerCase();
+  return (p==='premium'||p==='excellence')?p:'';
+}
+/* Stufe IMMER bestimmbar – Smart ist die Basis ohne firma_produkt. */
+function tierLevel(j){
+  const p=(j.firma_produkt||'').toLowerCase();
+  if(p==='excellence') return 'excellence';
+  if(p==='premium')    return 'premium';
+  return 'smart';
+}
+function tierBadge(j){
+  const t=tier(j);
+  if(!t) return '';
+  return t==='excellence'
+    ? '<span class="pbadge exc">★ Exzellenz</span>'
+    : '<span class="pbadge">★ Premium</span>';
+}
+/* Was der Bewerber je Stufe sichtbar bekommt – Marketing- + Conversion-Hebel
+   und zugleich das Upsell-Argument im Arbeitgeber-Gespräch. */
+const TIER_PERKS={
+  excellence:[
+    ['☎️','Telefonische Vorqualifizierung','Unser Team meldet sich persönlich bei dir, klärt offene Fragen und stellt dich dem Betrieb vor.'],
+    ['💬','WhatsApp-Schnellbewerbung','Bewirb dich und stell Rückfragen bequem per WhatsApp – ohne Formular-Marathon.'],
+    ['⚡','Antwort-Garantie','Du bekommst eine verbindliche Rückmeldung. Keine Bewerbung, die im Nichts verschwindet.'],
+    ['🎯','Fester Ansprechpartner','Ein persönlicher Kontakt begleitet dich bis zum ersten Gespräch.']
+  ],
+  premium:[
+    ['✓','Verifizierter Betrieb','Identität und Seriosität dieses GaLaBau-Betriebs sind von GreenCareers geprüft.'],
+    ['⭐','Hervorgehobene Stelle','Diese Stelle wird passenden Fachkräften bevorzugt angezeigt.'],
+    ['⚡','Schnelle Rückmeldung','Der Betrieb meldet sich in der Regel innerhalb von 48 Stunden.']
+  ],
+  smart:[
+    ['✓','Geprüfter Betrieb','Ein echter GaLaBau-Betrieb aus dem GreenCareers-Netzwerk – keine anonyme Anzeige.'],
+    ['⚡','Direkt-Bewerbung','Deine Bewerbung landet ohne Umweg beim Betrieb.']
+  ]
+};
+const TIER_META={
+  excellence:{label:'Exzellenz-Stelle',cls:'exc',sub:'Mit telefonischer Vorqualifizierung – unser Team meldet sich persönlich bei dir.'},
+  premium:{label:'Premium-Stelle',cls:'prem',sub:'Verifizierter Betrieb – Rückmeldung in der Regel innerhalb von 48 Stunden.'},
+  smart:{label:'',cls:'',sub:'Schnell &amp; ohne Anschreiben – der Betrieb meldet sich direkt bei dir.'}
+};
+
+/* ---------- Partner-Logo-Slider ---------- */
+function renderPartners(){
+  const seen=new Set(), items=[];
+  JOBS.forEach(j=>{
+    const key=j.firma_id||j.firma;
+    if(!key||seen.has(key)) return; seen.add(key);
+    if(j.firma_logo) items.push('<div class="plogo"><img src="'+esc(j.firma_logo)+'" alt="'+esc(j.firma)+'" loading="lazy"></div>');
+    else if(j.firma) items.push('<div class="plogo"><span class="pname">'+esc(j.firma)+'</span></div>');
+  });
+  if(items.length<2){ $('pslider').style.display='none'; return; }
+  // Set verdoppeln -> nahtloser -50%-Loop
+  $('ptrack').innerHTML = items.join('')+items.join('');
+  $('pslider').style.display='';
+}
+
+/* ---------- Animierte Ablauf-Karte ---------- */
+let tlTimer=null;
+function startTimeline(){
+  const steps=[...document.querySelectorAll('#tlList .tl-step')];
+  if(!steps.length) return;
+  clearTimeout(tlTimer);
+  let i=0;
+  (function cycle(){
+    if(i<steps.length){
+      steps[i].classList.add('done'); i++;
+      tlTimer=setTimeout(cycle,1100);
+    }else{
+      tlTimer=setTimeout(()=>{ steps.forEach(s=>s.classList.remove('done')); i=0; cycle(); },2800);
+    }
+  })();
+}
+
+/* ---------- Such-Normalisierung & Synonyme ---------- */
+function norm(s){
+  return (s||'').toLowerCase()
+    .replace(/ä/g,'a').replace(/ö/g,'o').replace(/ü/g,'u').replace(/ß/g,'ss')
+    .replace(/[^a-z0-9 ]+/g,' ').replace(/\s+/g,' ').trim();
+}
+function stem(w){
+  if(w.length<5) return w;
+  return w.replace(/(innen|ungen|ung|erin|euren|eure|er|en|in|es|e|s)$/,'');
+}
+// konservative Synonym-Cluster (auf Stamm-Ebene)
+const SYN=[
+  ['galabau','gartenbau','landschaftsbau','landschaftsgartn','gartner','pflanz','begrun','garten'],
+  ['pflaster','wegebau','wege','natursteinpflaster'],
+  ['pflege','grunpflege','gartenpflege','grunflach'],
+  ['baumpfleg','baumkletter','baumfall','baumservice'],
+  ['bagger','baggerfahr','baugerat','baumaschin','radlader'],
+  ['polier','vorarbeit','bauleit','kolonnenfuhr'],
+  ['lkw','kraftfahr','fahrer','berufskraftfahr']
+];
+function expand(stemWord){
+  const set=new Set([stemWord]);
+  SYN.forEach(g=>{ if(g.some(t=>stemWord.includes(t)||t.includes(stemWord))) g.forEach(t=>set.add(t)); });
+  return [...set];
+}
+
+/* ---------- Typewriter ---------- */
+const TW_WORDS=['GaLaBau','Garten- & Landschaftsbau','Pflasterbau','Wegebau','Erdbau','Pflanzenbau'];
+let twI=0;
+function typewriter(){
+  const el=$('twWord'); if(!el) return;
+  let pos=0, deleting=false;
+  function tick(){
+    const word=TW_WORDS[twI%TW_WORDS.length];   // jedes Mal frisch -> rotiert wirklich durch
+    if(!deleting){
+      pos++; el.textContent=word.slice(0,pos);
+      if(pos===word.length){deleting=true;return setTimeout(tick,1500);}
+      return setTimeout(tick,75);
+    }else{
+      pos--; el.textContent=word.slice(0,pos);
+      if(pos===0){deleting=false;twI++;return setTimeout(tick,250);}
+      return setTimeout(tick,40);
+    }
+  }
+  tick();
+}
+
+/* ---------- Geocoding (PLZ -> lat/lon) ---------- */
+const GEO={};
+async function geo(plz){
+  if(!/^\d{5}$/.test(plz)) return null;
+  if(plz in GEO) return GEO[plz];
+  try{
+    // Nominatim/OSM: zuverlässige PLZ-Koordinaten (zippopotam liefert für DE z.T. korrupte Daten)
+    const r=await fetch('https://nominatim.openstreetmap.org/search?postalcode='+plz+'&country=Germany&format=json&limit=1',{headers:{'Accept':'application/json'}});
+    if(!r.ok){GEO[plz]=null;return null;}
+    const d=await r.json(); const p=d&&d[0];
+    GEO[plz]= p? {lat:+p.lat,lon:+p.lon} : null;
+  }catch(e){GEO[plz]=null;}
+  return GEO[plz];
+}
+function haversine(a,b){
+  if(!a||!b) return null;
+  const R=6371, toR=x=>x*Math.PI/180;
+  const dLat=toR(b.lat-a.lat), dLon=toR(b.lon-a.lon);
+  const s=Math.sin(dLat/2)**2+Math.cos(toR(a.lat))*Math.cos(toR(b.lat))*Math.sin(dLon/2)**2;
+  return Math.round(2*R*Math.asin(Math.sqrt(s)));
+}
+
+async function load(){
+  const {data,error} = await sb.from('public_jobs').select('*').order('published_at',{ascending:false});
+  if(error){
+    $('list').innerHTML='<div class="empty"><div class="ico">⚠️</div>Stellen konnten nicht geladen werden.<br><small>'+esc(error.message)+'</small></div>';
+    $('resultInfo').textContent='';
+    return;
+  }
+  JOBS = data||[];
+  // Firmen-PLZ vorab geocoden (klein, einmalig)
+  await Promise.all([...new Set(JOBS.map(j=>j.firma_plz).filter(Boolean))].map(geo));
+  buildFilters();
+  renderFeatured();
+  renderPartners();
+  startTimeline();
+  route();
+}
+
+/* ---------- Filter-Sidebar ---------- */
+function buildFilters(){
+  // Branche: kanonische Liste, aber nur Branchen mit mind. 1 passenden Stelle
+  const branchen = BRANCHE_STD.filter(b=>JOBS.some(j=>jobMatchesBranche(j,b)));
+  // Beruf: distinkte Stellentitel
+  const berufe = Array.from(new Set(JOBS.map(j=>j.titel).filter(Boolean))).sort();
+  const arten = Array.from(new Set([...ART_STD, ...JOBS.map(j=>j.beschaeftigungsart).filter(Boolean)]));
+  $('fbar').innerHTML =
+    (branchen.length?`<h4>Branche</h4><div class="fgroup">`+branchen.map(b=>
+      `<label class="fchk"><input type="checkbox" ${SEL_BRANCHE.has(b)?'checked':''} onchange="toggleBranche('${esc(b)}')"> ${esc(b)}</label>`
+    ).join('')+`</div>`:'')
+    +(berufe.length?`<h4>Beruf</h4><div class="fgroup">`+berufe.map(b=>
+      `<label class="fchk"><input type="checkbox" ${SEL_BERUF.has(b)?'checked':''} onchange="toggleBeruf('${esc(b)}')"> ${esc(b)}</label>`
+    ).join('')+`</div>`:'')
+    +`<h4>Beschäftigung</h4><div class="fpills">`+arten.map(a=>
+      `<div class="fpill ${SEL_ART.has(a)?'on':''}" onclick="toggleArt('${esc(a)}')">${esc(a)}</div>`
+    ).join('')+`</div>`
+    +`<h4>Region</h4>
+      <input class="finput" id="fplz" placeholder="Deine PLZ, z.B. 50667" inputmode="numeric" maxlength="5" oninput="onPlz()">
+      <div class="frange">
+        <input type="range" id="frad" min="0" max="150" step="10" value="${RADIUS}" oninput="onRadius()">
+        <span class="rv" id="fradv">${RADIUS?RADIUS+' km':'ganz DE'}</span>
+      </div>
+      <div class="fmap">
+        <svg viewBox="0 0 220 150" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="220" height="150" fill="#EEF1F0"/>
+          <g stroke="#D9DEDC" stroke-width="3" fill="none">
+            <path d="M-10 40 L230 30"/><path d="M-10 95 L230 110"/>
+            <path d="M55 -10 L75 160"/><path d="M150 -10 L135 160"/>
+          </g>
+          <g stroke="#E3C9B4" stroke-width="2" fill="none">
+            <path d="M-10 70 L230 64"/><path d="M105 -10 L120 160"/>
+          </g>
+          <circle id="fmapCircle" cx="110" cy="75" r="30" fill="rgba(22,163,74,.14)" stroke="var(--o)" stroke-width="2"/>
+          <circle cx="110" cy="75" r="5.5" fill="var(--o-dark)"/>
+          <circle cx="110" cy="75" r="11" fill="none" stroke="var(--o)" stroke-width="1.5" opacity=".5"/>
+        </svg>
+        <span class="fmaplbl" id="fmapLbl">${RADIUS?'~'+RADIUS+' km Umkreis':'ganz Deutschland'}</span>
+      </div>
+      <button class="freset" onclick="resetFilters()">Filter zurücksetzen</button>`;
+  updateMiniMap();
+}
+function toggleBranche(b){ SEL_BRANCHE.has(b)?SEL_BRANCHE.delete(b):SEL_BRANCHE.add(b); applyFilter(); }
+function toggleBeruf(b){ SEL_BERUF.has(b)?SEL_BERUF.delete(b):SEL_BERUF.add(b); applyFilter(); }
+function toggleArt(a){ SEL_ART.has(a)?SEL_ART.delete(a):SEL_ART.add(a); buildFilters(); applyFilter(); }
+let plzTimer=null;
+function onPlz(){
+  const v=$('fplz').value.trim();
+  clearTimeout(plzTimer);
+  updateMiniMap();
+  plzTimer=setTimeout(async()=>{
+    SEARCH_GEO = /^\d{5}$/.test(v) ? await geo(v) : null;
+    applyFilter();
+  },350);
+}
+function onRadius(){ RADIUS=+$('frad').value; $('fradv').textContent=RADIUS?RADIUS+' km':'ganz DE'; updateMiniMap(); applyFilter(); }
+function updateMiniMap(){
+  const c=$('fmapCircle'); if(!c) return;
+  c.setAttribute('r', 12 + (RADIUS/150)*62);
+  const lbl=$('fmapLbl');
+  if(lbl){
+    const plz=($('fplz')?.value||'').trim();
+    lbl.textContent = RADIUS
+      ? '~'+RADIUS+' km Umkreis'+(/^\d{5}$/.test(plz)?' um '+plz:'')
+      : (/^\d{5}$/.test(plz)?'um '+plz:'ganz Deutschland');
+  }
+}
+function resetFilters(){ SEL_BRANCHE.clear(); SEL_BERUF.clear(); SEL_ART.clear(); SEARCH_GEO=null; RADIUS=0; if($('q'))$('q').value=''; buildFilters(); applyFilter(); }
+
+function distOf(j){
+  if(!SEARCH_GEO || !j.firma_plz) return null;
+  return haversine(SEARCH_GEO, GEO[j.firma_plz]||null);
+}
+
+function applyFilter(){
+  const q=($('q')?.value||'').toLowerCase().trim();
+  let rows=JOBS.filter(j=>{
+    if(SEL_BRANCHE.size && ![...SEL_BRANCHE].some(b=>jobMatchesBranche(j,b))) return false;
+    if(SEL_BERUF.size && !SEL_BERUF.has(j.titel)) return false;
+    if(SEL_ART.size && !SEL_ART.has(j.beschaeftigungsart)) return false;
+    if(q){
+      const hay=norm(j.titel+' '+j.firma+' '+(j.ort||'')+' '+(j.branche||'')+' '+(j.beschreibung||'')
+                     +' '+(j.aufgaben||'')+' '+(j.profil||''));
+      // pro Suchwort: Stamm + Synonyme; jedes Wort muss matchen
+      const ok = norm(q).split(' ').filter(Boolean).every(word=>{
+        const variants=expand(stem(word));
+        return variants.some(v=> v.length>=3 ? hay.includes(v) : hay.split(' ').includes(v));
+      });
+      if(!ok) return false;
+    }
+    // Hinweis: Radius filtert bewusst (noch) nicht hart aus – bei aktuell wenigen
+    // Stellen würden Bewerber sonst leer ausgehen. Stattdessen wird nach Nähe sortiert.
+    // Sobald genug Stellen online sind, hier wieder den harten Cutoff aktivieren.
+    return true;
+  });
+  if(SEARCH_GEO){
+    rows.forEach(j=>j._dist=distOf(j));
+    rows.sort((a,b)=>{
+      const da=a._dist==null?1e9:a._dist, db=b._dist==null?1e9:b._dist;
+      return da-db || new Date(b.published_at)-new Date(a.published_at);
+    });
+  }else{
+    rows.sort((a,b)=>new Date(b.published_at)-new Date(a.published_at));
+  }
+  renderList(rows);
+}
+
+function renderFeatured(){
+  const rank={excellence:0,premium:1};
+  const feat=JOBS.filter(tier).sort((a,b)=>(rank[tierLevel(a)]-rank[tierLevel(b)]) || new Date(b.published_at)-new Date(a.published_at));
+  if(!feat.length){ $('featSec').style.display='none'; return; }
+  $('featSec').style.display='';
+  $('featRow').innerHTML=feat.map(j=>{
+    const cov=coverUrl(j);
+    return `<div class="fcard" onclick="openJob('${esc(j.slug)}')">
+      <div class="fcover ${cov?'':'noimg'}">
+        ${cov?`<img class="cf-bg" src="${esc(cov)}" alt="" aria-hidden="true"><img class="cf-fg" src="${esc(cov)}" alt="" loading="lazy">`:esc(initials(j.firma))}
+        ${tierBadge(j)}
+        <span class="datebadge">${ago(j.published_at)}</span>
+      </div>
+      <div class="fbody">
+        <div class="ftop">${fav(j)}<div><h3>${esc(j.titel)}</h3><div class="firma">${esc(j.firma)}</div></div></div>
+        <div class="fmeta">
+          ${j.ort?`<span class="tag">📍 ${esc(j.ort)}</span>`:''}
+          ${j.beschaeftigungsart?`<span class="tag">🕒 ${esc(j.beschaeftigungsart)}</span>`:''}
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderList(rows){
+  const near = SEARCH_GEO ? ' · nach Entfernung sortiert' : '';
+  $('resultInfo').textContent = rows.length+' '+(rows.length===1?'offene Stelle':'offene Stellen')+near;
+  if(!rows.length){
+    $('list').innerHTML='<div class="empty"><div class="ico">🔍</div><b>Keine passenden Stellen gefunden.</b><br>Passe Filter oder Umkreis an.</div>';
+    return;
+  }
+  $('list').innerHTML='<div class="grid">'+rows.map(j=>{
+    const cov=coverUrl(j);
+    const d=j._dist;
+    const lv=tierLevel(j);
+    return `<div class="job ${lv==='excellence'?'tier-exc':lv==='premium'?'tier-prem':''}" onclick="openJob('${esc(j.slug)}')">
+      <div class="jcover ${cov?'':'noimg'}">
+        ${cov?`<img class="cf-bg" src="${esc(cov)}" alt="" aria-hidden="true"><img class="cf-fg" src="${esc(cov)}" alt="" loading="lazy">`:esc(initials(j.firma))}
+        ${tierBadge(j)}
+        <span class="datebadge">${ago(j.published_at)}</span>
+      </div>
+      <div class="jbody">
+        <div class="job-top">${fav(j)}<div><h3>${esc(j.titel)}</h3><div class="firma">${esc(j.firma)}</div></div></div>
+        <div class="tags">
+          ${(d!=null)?`<span class="tag dist">📍 ${d} km entfernt</span>`:(j.ort?`<span class="tag">📍 ${esc(j.ort)}</span>`:'')}
+          ${j.beschaeftigungsart?`<span class="tag">🕒 ${esc(j.beschaeftigungsart)}</span>`:''}
+          ${j.gehalt?`<span class="tag sal">💶 ${esc(fmtGehalt(j.gehalt))}</span>`:''}
+        </div>
+        <div class="job-foot"><span class="ago">${ago(j.published_at)}</span><span class="more">Details ansehen →</span></div>
+      </div>
+    </div>`;
+  }).join('')+'</div>';
+}
+
+/* ---------- Routing ---------- */
+function route(){
+  const slug=new URLSearchParams(location.search).get('job');
+  if(slug){const j=JOBS.find(x=>x.slug===slug); if(j){return renderDetail(j);}}
+  showHome();
+}
+function openJob(slug){
+  history.pushState({},'', '?job='+encodeURIComponent(slug));
+  const j=JOBS.find(x=>x.slug===slug);
+  if(j) renderDetail(j); window.scrollTo(0,0);
+}
+function goHome(){history.pushState({},'',location.pathname);showHome();}
+function showHome(){$('detail').style.display='none';$('home').style.display='';resetSeo();applyFilter();}
+window.addEventListener('popstate',route);
+
+/* ---------- Menü / Drawer ---------- */
+function toggleDrawer(){
+  const open=$('drawer').classList.toggle('on');
+  $('scrim').classList.toggle('on',open);
+  $('burger').classList.toggle('on',open);
+  document.body.style.overflow=open?'hidden':'';
+}
+function closeDrawer(){
+  $('drawer').classList.remove('on');$('scrim').classList.remove('on');
+  $('burger').classList.remove('on');document.body.style.overflow='';
+}
+function scrollToEl(id){const el=$(id);if(el)el.scrollIntoView({behavior:'smooth',block:'start'});}
+function goJobs(){ if($('detail').style.display==='block')goHome(); setTimeout(()=>scrollToEl('jobsAnchor'),60); }
+function goFaq(){ if($('detail').style.display==='block')goHome(); setTimeout(()=>scrollToEl('faqSec'),60); }
+function filterBranche(b){
+  if($('detail').style.display==='block')goHome();
+  SEL_BRANCHE.clear();
+  // nur setzen, wenn diese Branche auch wirklich passende Stellen hat – sonst alles zeigen
+  if(JOBS.some(j=>jobMatchesBranche(j,b))) SEL_BRANCHE.add(b);
+  buildFilters(); applyFilter();
+  setTimeout(()=>scrollToEl('jobsAnchor'),60);
+}
+
+/* ============ JOB-QUIZ ============ */
+const QUIZ={step:1,berufe:[],berufOther:'',erfahrung:'',plz:'',kanal:'email'};
+function quizOpen(){
+  QUIZ.step=1; QUIZ.berufe=[]; QUIZ.berufOther=''; QUIZ.erfahrung=''; QUIZ.plz=''; QUIZ.kanal='email';
+  $('quizOv').classList.add('on'); document.body.style.overflow='hidden';
+  // Reset UI
+  document.querySelectorAll('#quizOv .qchip').forEach(c=>c.classList.remove('sel'));
+  $('quizBerufOther').value=''; $('quizPlz').value=''; quizBerufCount();
+  $('quizPlzHint').textContent='5-stellige PLZ eingeben'; $('quizPlzHint').classList.remove('ok');
+  const m=$('quizAboMsg'); m.textContent=''; m.className='quiz-abo-msg';
+  $('quizVorname').value=''; $('quizNachname').value=''; $('quizEmail').value=''; $('quizTel').value='';
+  $('quizConsent').checked=false; quizPickKanal('email');
+  $('quizAboForm').style.display=''; $('quizAboBtn').disabled=false;
+  $('quizAbo').classList.remove('done');
+  quizRender();
+}
+function quizPickKanal(k){
+  QUIZ.kanal=k;
+  $('qkEmail').classList.toggle('sel', k==='email');
+  $('qkWa').classList.toggle('sel', k==='whatsapp');
+}
+function quizClose(){ $('quizOv').classList.remove('on'); document.body.style.overflow=''; }
+function quizRender(){
+  document.querySelectorAll('#quizOv .quiz-step').forEach(s=>{
+    s.hidden = (+s.dataset.step !== QUIZ.step);
+  });
+  $('quizBar').style.width = (QUIZ.step*25)+'%';
+  const isResult = QUIZ.step===4;
+  $('quizBack').hidden = (QUIZ.step===1 || isResult);
+  $('quizNext').hidden = isResult;
+  document.querySelector('.quiz-nav').style.display = isResult ? 'none' : 'flex';
+  quizValidate();
+}
+function quizBerufList(){ const a=[...QUIZ.berufe]; const o=(QUIZ.berufOther||'').trim(); if(o)a.push(o); return a; }
+function quizValidate(){
+  let ok=false;
+  if(QUIZ.step===1) ok = quizBerufList().length>0;
+  else if(QUIZ.step===2) ok = /^\d{5}$/.test(QUIZ.plz);
+  else if(QUIZ.step===3) ok = !!QUIZ.erfahrung;   // Pflicht – kein Überspringen
+  $('quizNext').disabled = !ok;
+}
+function quizBerufCount(){
+  const el=$('quizBerufCnt'); if(!el)return;
+  const n=QUIZ.berufe.length;
+  el.classList.remove('warn');
+  el.textContent = n ? (n+' von 5 ausgewählt') : '';
+}
+function quizPickBeruf(btn,val){
+  const i=QUIZ.berufe.indexOf(val);
+  if(i>=0){ QUIZ.berufe.splice(i,1); btn.classList.remove('sel'); }
+  else{
+    if(QUIZ.berufe.length>=5){
+      const el=$('quizBerufCnt');
+      if(el){ el.textContent='Maximal 5 Berufe – wähle erst einen ab.'; el.classList.add('warn'); }
+      return;
+    }
+    QUIZ.berufe.push(val); btn.classList.add('sel');
+  }
+  quizBerufCount(); quizValidate();
+}
+function quizOtherBeruf(v){
+  QUIZ.berufOther = v || '';
+  quizValidate();
+}
+function quizPlzInput(v){
+  const clean=v.replace(/\D/g,'').slice(0,5);
+  if($('quizPlz').value!==clean)$('quizPlz').value=clean;
+  QUIZ.plz=clean;
+  const h=$('quizPlzHint');
+  if(/^\d{5}$/.test(clean)){ h.textContent='Passt – weiter geht\u2019s'; h.classList.add('ok'); }
+  else{ h.textContent='5-stellige PLZ eingeben'; h.classList.remove('ok'); }
+  quizValidate();
+}
+function quizPickErf(btn,val){
+  const was=btn.classList.contains('sel');
+  document.querySelectorAll('.quiz-step[data-step="3"] .qchip').forEach(c=>c.classList.remove('sel'));
+  if(!was){ btn.classList.add('sel'); QUIZ.erfahrung=val; } else { QUIZ.erfahrung=''; }
+  quizValidate();
+}
+function quizPrev(){ if(QUIZ.step>1){ QUIZ.step--; quizRender(); } }
+async function quizNext(){
+  if(QUIZ.step<3){ QUIZ.step++; quizRender(); return; }
+  if(QUIZ.step===3){ await quizFinish(); }
+}
+async function quizFinish(){
+  // Filter-Engine ansteuern (nächstgelegene Stellen, abgestuft – kein "keine Treffer"-Disclaimer)
+  if($('detail').style.display==='block')goHome();
+  const berufe=quizBerufList();
+  if($('q')) $('q').value = berufe[0]||'';
+  SEL_BRANCHE.clear(); SEL_BERUF.clear(); SEL_ART.clear();
+  buildFilters();
+  if($('fplz')) $('fplz').value = QUIZ.plz;
+  SEARCH_GEO = /^\d{5}$/.test(QUIZ.plz) ? await geo(QUIZ.plz) : null;
+  updateMiniMap();
+  applyFilter();
+  // Top-Treffer fürs Quiz-Ergebnis berechnen (gleiche Sortierung wie applyFilter)
+  let rows=[...JOBS];
+  if(SEARCH_GEO){
+    rows.forEach(j=>j._dist=distOf(j));
+    rows.sort((a,b)=>{const da=a._dist==null?1e9:a._dist,db=b._dist==null?1e9:b._dist;
+      return da-db || new Date(b.published_at)-new Date(a.published_at);});
+  }else{
+    rows.sort((a,b)=>new Date(b.published_at)-new Date(a.published_at));
+  }
+  const top=rows.slice(0,3);
+  const ttl=$('quizResultTitle'), sub=$('quizResultSub'), eye=$('quizResultEyebrow');
+  if(top.length){
+    eye.textContent = 'Deine Treffer';
+    ttl.textContent = QUIZ.plz ? 'Die besten Jobs rund um '+QUIZ.plz : 'Die besten Jobs für dich';
+    sub.textContent = SEARCH_GEO
+      ? 'Nach Nähe sortiert – die nächstgelegene zuerst. Tippe auf einen Job, um dich direkt zu bewerben.'
+      : 'Tippe auf einen Job, um dich direkt zu bewerben.';
+  }else{
+    eye.textContent = 'Noch frisch hier';
+    ttl.textContent = 'Bald die ersten Top-Jobs für dich';
+    sub.textContent = 'Sei von Anfang an dabei und erhalte neue Stellen als Erster – siehe unten.';
+  }
+  $('quizJobs').innerHTML = top.map(j=>{
+    const d=j._dist;
+    const meta = (d!=null)?(d+' km · '+esc(j.firma)) : ((j.ort?esc(j.ort)+' · ':'')+esc(j.firma));
+    const badge = (d!=null)? d+' km' : (j.ort?esc(j.ort):'');
+    return `<div class="qjob" onclick="quizClose();openJob('${esc(j.slug)}')">
+      <span class="qjob-ic">${esc(initials(j.firma))}</span>
+      <span class="qjob-tx"><b>${esc(j.titel)}</b><small>${meta}</small></span>
+      ${badge?`<span class="qjob-dist">${badge}</span>`:''}
+    </div>`;
+  }).join('');
+  $('quizAllBtn').style.display = top.length ? '' : 'none';
+  QUIZ.step=4; quizRender();
+}
+function quizShowJobs(){
+  quizClose();
+  setTimeout(()=>scrollToEl('jobsAnchor'),120);
+}
+async function quizSubmitAbo(){
+  const vorname=$('quizVorname').value.trim();
+  const nachname=$('quizNachname').value.trim();
+  const email=$('quizEmail').value.trim();
+  const tel=$('quizTel').value.trim();
+  const msg=$('quizAboMsg');
+  if(!vorname||!nachname){ msg.className='quiz-abo-msg err'; msg.textContent='Bitte Vor- und Nachnamen eingeben.'; return; }
+  const emailOk=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  if(!emailOk){ msg.className='quiz-abo-msg err'; msg.textContent='Bitte gib eine gültige E-Mail-Adresse ein.'; return; }
+  if(QUIZ.kanal==='whatsapp' && !tel){ msg.className='quiz-abo-msg err'; msg.textContent='Für WhatsApp brauchen wir deine Nummer.'; return; }
+  if(!$('quizConsent').checked){ msg.className='quiz-abo-msg err'; msg.textContent='Bitte stimme der Datenschutzerklärung zu.'; return; }
+  const btn=$('quizAboBtn'); btn.disabled=true; btn.textContent='Wird gespeichert…';
+  const payload={
+    vorname, nachname, email,
+    telefon: tel || null,
+    kanal: QUIZ.kanal,                 // 'email' oder 'whatsapp'
+    beruf: quizBerufList().join(', ') || null,
+    plz: QUIZ.plz || null,
+    erfahrung: QUIZ.erfahrung || null,
+    quelle: 'portal_quiz'
+  };
+  try{
+    const {error}=await sb.from('job_abo').insert(payload);
+    if(error) throw error;
+    $('quizAboForm').style.display='none';
+    $('quizAbo').classList.add('done');
+    msg.className='quiz-abo-msg ok';
+    msg.textContent = QUIZ.kanal==='whatsapp'
+      ? '✓ Geschafft! Du bekommst die besten Jobs ab jetzt direkt per WhatsApp.'
+      : '✓ Geschafft! Du bekommst die besten Jobs ab jetzt direkt per E-Mail.';
+  }catch(e){
+    btn.disabled=false; btn.textContent='Ja, ich will die besten Jobs zuerst →';
+    msg.className='quiz-abo-msg err';
+    msg.textContent='Hat nicht geklappt. Bitte versuch es gleich nochmal oder schreib uns an hello@green-careers.de.';
+  }
+}
+document.addEventListener('keydown',e=>{ if(e.key==='Escape' && $('quizOv').classList.contains('on'))quizClose(); });
+
+function asList(v){
+  if(Array.isArray(v)) return v.map(x=>String(x).trim()).filter(Boolean);
+  if(!v||!String(v).trim()) return [];
+  return String(v).split(/\r?\n|;|•|·/).map(s=>s.replace(/^[-–•*\s]+/,'').trim()).filter(Boolean);
+}
+
+/* ---------- SEO / Sharing / Ähnliche Stellen ---------- */
+const SITE='https://galabau.green-careers.de';
+function setMeta(sel,attr,val){ const el=document.querySelector(sel); if(el&&val!=null) el.setAttribute(attr,val); }
+function jobUrl(slug){ return SITE+'/?job='+encodeURIComponent(slug); }
+function plain(s,max){ s=(s==null?'':String(s)).replace(/<[^>]+>/g,' ').replace(/&[a-z]+;/gi,' ').replace(/\s+/g,' ').trim(); if(max&&s.length>max) s=s.slice(0,max-1).trim()+'…'; return s; }
+
+function applyJobSeo(j){
+  const url=jobUrl(j.slug);
+  const loc=j.firma_ort||j.ort;
+  const title=`${plain(j.titel)} bei ${plain(j.firma)}${loc?' · '+plain(loc):''} · GreenCareers`;
+  const body=plain(j.beschreibung||j.aufgaben||'',150);
+  const desc=plain(`${plain(j.titel)} bei ${plain(j.firma)}${loc?' in '+plain(loc):''}.${body?' '+body:''} Jetzt direkt bewerben – ohne Anschreiben.`,300);
+  // WhatsApp/OG-Vorschau zeigt das Titelbild des Betriebs (wie im Banner), nicht ein zufälliges Stellenbild
+  const img=j.firma_titelbild||coverUrl(j)||SITE+'/assets/hero.jpg';
+  document.title=title;
+  setMeta('meta[name="description"]','content',desc);
+  setMeta('#canonical','href',url);
+  setMeta('#og-title','content',title); setMeta('#tw-title','content',title);
+  setMeta('#og-desc','content',desc); setMeta('#tw-desc','content',desc);
+  setMeta('#og-url','content',url);
+  setMeta('#og-image','content',img); setMeta('#tw-image','content',img);
+  injectJobPosting(j);
+}
+function resetSeo(){
+  const url=SITE+'/', img=SITE+'/assets/hero.jpg';
+  const title='GaLaBau-Jobs · Garten- & Landschaftsbau · GreenCareers Karrierenetzwerk';
+  const desc='Aktuelle Jobs bei geprüften GaLaBau-Betrieben in deiner Region – ein Profil, direkt bewerben, ohne Anschreiben-Marathon.';
+  document.title=title;
+  setMeta('meta[name="description"]','content',desc);
+  setMeta('#canonical','href',url);
+  setMeta('#og-title','content',title); setMeta('#tw-title','content',title);
+  setMeta('#og-desc','content',desc); setMeta('#tw-desc','content',desc);
+  setMeta('#og-url','content',url);
+  setMeta('#og-image','content',img); setMeta('#tw-image','content',img);
+  removeJobPosting();
+}
+
+const EMP_MAP={vollzeit:'FULL_TIME',teilzeit:'PART_TIME',minijob:'PART_TIME',aushilfe:'PART_TIME',ausbildung:'INTERN',praktikum:'INTERN',werkstudent:'PART_TIME',freelance:'CONTRACTOR'};
+function empType(s){ const k=(s||'').toLowerCase(); for(const key in EMP_MAP){ if(k.includes(key)) return EMP_MAP[key]; } return 'FULL_TIME'; }
+// Einheitliche Gehalts-Darstellung (defensiv, falls Alt-Daten ungrouped/ohne € ankommen).
+function fmtGehalt(raw){
+  if(raw==null) return '';
+  let s=String(raw).trim(); if(!s) return '';
+  s=s.replace(/€/g,' ').replace(/\b(euro|eur)\b/gi,' ');
+  let saw=false;
+  s=s.replace(/\d{1,3}(?:[.\s]\d{3})+|\d{3,6}/g,m=>{const n=parseInt(m.replace(/[^\d]/g,''),10);if(!isFinite(n))return m;saw=true;return n.toLocaleString('de-DE');});
+  s=s.replace(/(\d)\s*[-–—]\s*(\d)/g,'$1 – $2');
+  s=s.replace(/\s*\/\s*(monat|jahr|std|stunde|h|woche)\b/gi,' / $1');
+  s=s.replace(/\s{2,}/g,' ').trim();
+  if(saw && !/€/.test(s)){const g=s.match(/\d[\d.\s]*\d|\d/g);if(g){const last=g[g.length-1];const i=s.lastIndexOf(last);s=s.slice(0,i+last.length)+' €'+s.slice(i+last.length);}}
+  return s.replace(/\s{2,}/g,' ').replace(/\s+€/g,' €').trim();
+}
+function parseSalary(s){
+  if(!s) return null;
+  const cleaned=String(s).replace(/\./g,'');
+  const nums=(cleaned.match(/\d{3,6}/g)||[]).map(Number).filter(n=>n>=1000&&n<=200000);
+  if(!nums.length) return null;
+  const unit=/jahr|p\.?a\.?|annum/i.test(s)?'YEAR':'MONTH';
+  const v= nums.length>1
+    ? {"@type":"QuantitativeValue","minValue":Math.min(...nums),"maxValue":Math.max(...nums),"unitText":unit}
+    : {"@type":"QuantitativeValue","value":nums[0],"unitText":unit};
+  return {"@type":"MonetaryAmount","currency":"EUR","value":v};
+}
+function removeJobPosting(){ const e=document.getElementById('ld-jobposting'); if(e) e.remove(); }
+function injectJobPosting(j){
+  removeJobPosting();
+  const ul=arr=>asList(arr).length?'<ul>'+asList(arr).map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>':'';
+  const descHtml=[
+    j.beschreibung?'<p>'+esc(plain(j.beschreibung))+'</p>':'',
+    asList(j.aufgaben).length?'<p><strong>Deine Aufgaben:</strong></p>'+ul(j.aufgaben):'',
+    asList(j.profil).length?'<p><strong>Dein Profil:</strong></p>'+ul(j.profil):''
+  ].join('') || ('<p>'+esc(plain(j.titel))+' bei '+esc(plain(j.firma))+'.</p>');
+  const ld={
+    "@context":"https://schema.org/","@type":"JobPosting",
+    "title":plain(j.titel),
+    "description":descHtml,
+    "employmentType":empType(j.beschaeftigungsart),
+    "directApply":true,
+    "url":jobUrl(j.slug),
+    "identifier":{"@type":"PropertyValue","name":plain(j.firma)||"GreenCareers","value":j.slug},
+    "hiringOrganization":{"@type":"Organization","name":plain(j.firma)||"GreenCareers"},
+    "jobLocation":{"@type":"Place","address":{"@type":"PostalAddress","addressCountry":"DE"}}
+  };
+  if(j.published_at){ try{ ld.datePosted=new Date(j.published_at).toISOString().slice(0,10); }catch(e){} }
+  if(j.firma_website) ld.hiringOrganization.sameAs=j.firma_website;
+  if(j.firma_logo) ld.hiringOrganization.logo=j.firma_logo;
+  const locality=plain(j.firma_ort||j.ort);
+  if(locality) ld.jobLocation.address.addressLocality=locality;
+  if(j.firma_plz) ld.jobLocation.address.postalCode=String(j.firma_plz);
+  const sal=parseSalary(j.gehalt); if(sal) ld.baseSalary=sal;
+  const sc=document.createElement('script'); sc.type='application/ld+json'; sc.id='ld-jobposting';
+  sc.textContent=JSON.stringify(ld); document.head.appendChild(sc);
+}
+
+function shareWhatsApp(slug){
+  const j=JOBS.find(x=>x.slug===slug)||{};
+  const text=encodeURIComponent(`${plain(j.titel)||'Diese Stelle'} bei ${plain(j.firma)||''} – jetzt bewerben: ${jobUrl(slug)}`);
+  window.open('https://wa.me/?text='+text,'_blank','noopener');
+}
+function shareJob(slug){
+  const j=JOBS.find(x=>x.slug===slug)||{};
+  const url=jobUrl(slug);
+  if(navigator.share){ navigator.share({title:plain(j.titel)||'Stelle',text:`${plain(j.titel)} bei ${plain(j.firma)}`,url}).catch(()=>{}); return; }
+  if(navigator.clipboard){ navigator.clipboard.writeText(url).then(()=>flashShare('Link kopiert ✓')).catch(()=>flashShare(url)); }
+  else { window.prompt('Link kopieren:',url); }
+}
+function flashShare(msg){ const el=$('shareMsg'); if(!el) return; el.textContent=msg; el.classList.add('on'); setTimeout(()=>el.classList.remove('on'),1800); }
+
+function relatedJobs(j){
+  const others=JOBS.filter(x=>x.slug!==j.slug);
+  const loc=j.firma_ort||j.ort;
+  const scored=others.map(x=>{
+    let s=0;
+    if(BRANCHE_STD.some(b=>jobMatchesBranche(j,b)&&jobMatchesBranche(x,b))) s+=3;
+    if(x.titel&&x.titel===j.titel) s+=2;
+    const xloc=x.firma_ort||x.ort;
+    if(loc&&xloc&&xloc===loc) s+=1;
+    return {x,s};
+  }).filter(o=>o.s>0).sort((a,b)=>b.s-a.s||new Date(b.x.published_at)-new Date(a.x.published_at));
+  const list=scored.slice(0,3).map(o=>o.x);
+  if(list.length<3){
+    for(const x of [...others].sort((a,b)=>new Date(b.published_at)-new Date(a.published_at))){
+      if(list.length>=3) break; if(!list.includes(x)) list.push(x);
+    }
+  }
+  return list;
+}
+function relatedHtml(j){
+  const rel=relatedJobs(j); if(!rel.length) return '';
+  return `<div class="related"><h2 class="rel-h">Ähnliche Stellen</h2><div class="rel-grid">`+
+    rel.map(x=>{ const cov=coverUrl(x), lv=tierLevel(x);
+      return `<div class="rel-card ${lv==='excellence'?'tier-exc':lv==='premium'?'tier-prem':''}" onclick="openJob('${esc(x.slug)}')">
+        <div class="rel-cover ${cov?'':'noimg'}">${cov?`<img src="${esc(cov)}" alt="" loading="lazy">`:esc(initials(x.firma))}${tierBadge(x)}</div>
+        <div class="rel-body"><h3>${esc(x.titel)}</h3><div class="firma">${esc(x.firma)}</div>
+          <div class="tags">${(x.firma_ort||x.ort)?`<span class="tag">📍 ${esc(x.firma_ort||x.ort)}</span>`:''}${x.beschaeftigungsart?`<span class="tag">🕒 ${esc(x.beschaeftigungsart)}</span>`:''}</div>
+        </div>
+      </div>`;
+    }).join('')+`</div></div>`;
+}
+function blockText(title,txt){
+  if(!txt||!String(txt).trim()) return '';
+  return '<div class="block"><h4>'+title+'</h4><div class="body">'+esc(txt)+'</div></div>';
+}
+function blockList(title,v){
+  const items=asList(v); if(!items.length) return '';
+  return '<div class="block"><h4>'+title+'</h4><ul class="clist">'+
+    items.map(t=>'<li><span class="ck">✓</span><span>'+esc(t)+'</span></li>').join('')+'</ul></div>';
+}
+let CAR_ID=0;
+function carousel(arr){
+  const imgs=(Array.isArray(arr)?arr:[]).map(u=>String(u).trim()).filter(Boolean);
+  if(!imgs.length) return '';
+  const id='car'+(++CAR_ID), single=imgs.length===1;
+  return `<div class="carousel" id="${id}">
+    <div class="carousel-track" onscroll="carSync('${id}')">
+      ${imgs.map(u=>`<img src="${esc(u)}" alt="" loading="lazy" onclick="openLb('${esc(u).replace(/'/g,"\\'")}')">`).join('')}
+    </div>
+    ${single?'':`
+      <button class="carousel-arrow prev" onclick="carMove('${id}',-1)" aria-label="Vorheriges Bild">‹</button>
+      <button class="carousel-arrow next" onclick="carMove('${id}',1)" aria-label="Nächstes Bild">›</button>
+      <div class="carousel-dots" id="${id}-dots">${imgs.map((_,i)=>`<span class="dot ${i===0?'on':''}" onclick="carGo('${id}',${i})"></span>`).join('')}</div>`}
+  </div>`;
+}
+function carTrack(id){const c=$(id);return c?c.querySelector('.carousel-track'):null;}
+function carMove(id,dir){const t=carTrack(id);if(t)t.scrollBy({left:dir*t.clientWidth,behavior:'smooth'});}
+function carGo(id,i){const t=carTrack(id);if(t)t.scrollTo({left:i*t.clientWidth,behavior:'smooth'});}
+function carSync(id){const t=carTrack(id);if(!t)return;const i=Math.round(t.scrollLeft/t.clientWidth);
+  const dots=$(id+'-dots');if(dots)[...dots.children].forEach((d,k)=>d.classList.toggle('on',k===i));}
+function switchTab(name){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.dataset.tab===name));
+  document.querySelectorAll('.tabpane').forEach(p=>p.classList.toggle('on',p.dataset.tab===name));
+}
+function openLb(src){$('lbImg').src=src;$('lb').classList.add('on');}
+function closeLb(){$('lb').classList.remove('on');}
+
+function renderDetail(j){
+  $('home').style.display='none';
+  $('detail').style.display='block';
+  applyJobSeo(j);
+
+  const lvl=tierLevel(j), tm=TIER_META[lvl], perks=TIER_PERKS[lvl]||[];
+  const perksHtml=`<div class="perk-card ${tm.cls}">
+      ${tm.label?`<div class="perk-tier">★ ${tm.label}</div>`:'<div class="perk-tier basis">Geprüfter Betrieb</div>'}
+      <div class="perk-h">Was dich hier erwartet</div>
+      <ul class="perk-list">
+        ${perks.map(p=>`<li><span class="pk-i">${p[0]}</span><div><b>${p[1]}</b><span>${p[2]}</span></div></li>`).join('')}
+      </ul>
+    </div>`;
+  const stepperHtml=`<div class="proc-card">
+      <div class="perk-h">So läuft deine Bewerbung</div>
+      <ol class="proc-list">
+        <li><span class="ps-n">1</span><div><b>Formular absenden</b><span>Name &amp; Kontakt genügen – kein Anschreiben, keine Uploads.</span></div></li>
+        <li><span class="ps-n">2</span><div><b>${lvl==='excellence'?'Persönlicher Rückruf':'Betrieb erhält deine Bewerbung'}</b><span>${lvl==='excellence'?'Unser Team meldet sich, qualifiziert vor und stellt dich vor.':'Deine Bewerbung liegt sofort beim GaLaBau-Betrieb.'}</span></div></li>
+        <li><span class="ps-n">3</span><div><b>Direkter Kontakt</b><span>Der Betrieb meldet sich bei dir – oft schon am nächsten Werktag.</span></div></li>
+      </ol>
+    </div>`;
+
+  const benefitsHtml = (asList(j.benefits_list).length? blockList('Das bieten wir dir',j.benefits_list) : blockList('Das bieten wir dir',j.benefits))
+    || '<div class="block"><div class="body" style="color:var(--muted)">Keine Benefits hinterlegt.</div></div>';
+
+  const hasUeber = j.firma_ueber_uns || j.firma_mitarbeiter || j.firma_gruendung || (Array.isArray(j.firma_bilder)&&j.firma_bilder.length);
+  const mapQuery = encodeURIComponent((j.firma||'')+' '+(j.firma_ort||j.ort||''));
+  const ueberHtml = `
+    ${carousel(j.firma_bilder)}
+    ${(j.firma_mitarbeiter||j.firma_gruendung)?`<div class="ustats">
+        ${j.firma_mitarbeiter?`<div class="ustat"><b>${esc(j.firma_mitarbeiter)}</b><span>Mitarbeitende</span></div>`:''}
+        ${j.firma_gruendung?`<div class="ustat"><b>${esc(j.firma_gruendung)}</b><span>gegründet</span></div>`:''}
+        ${j.firma_ort?`<div class="ustat"><b>${esc(j.firma_ort)}</b><span>Standort</span></div>`:''}
+      </div>`:''}
+    ${blockText('Über '+(j.firma||'das Unternehmen'),j.firma_ueber_uns)}
+    ${j.firma_karriere_url?`<a class="karriere-btn" href="${esc(j.firma_karriere_url)}" target="_blank" rel="noopener">Zur Karriereseite →</a>`:''}
+    ${(j.firma_ort||j.ort)?`<div class="dt-map"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=${mapQuery}&output=embed"></iframe></div>`:''}`;
+
+  const apFoto = j.ansprechpartner_foto
+    ? `<img class="ap-foto" src="${esc(j.ansprechpartner_foto)}" alt="">`
+    : `<div class="ap-foto">${esc(initials(j.ansprechpartner||j.firma))}</div>`;
+
+  $('detailInner').innerHTML=`
+    <div class="dt-topbar">
+      <div class="back" onclick="goHome()">← Alle Stellen</div>
+      <div class="share-row">
+        <span class="share-msg" id="shareMsg"></span>
+        <button class="share-btn" onclick="shareJob('${esc(j.slug)}')" title="Stelle teilen">🔗 Teilen</button>
+        <button class="share-btn wa" onclick="shareWhatsApp('${esc(j.slug)}')" title="Per WhatsApp teilen">WhatsApp</button>
+      </div>
+    </div>
+    <div class="dt-grid">
+      <div class="dt-main">
+        <div class="dt-banner ${j.firma_titelbild?'':'noimg'}">${j.firma_titelbild?`<img class="cf-bg" src="${esc(j.firma_titelbild)}" alt="" aria-hidden="true"><img class="cf-fg" src="${esc(j.firma_titelbild)}" alt="">`:''}
+          ${tm.label?`<span class="dt-tier ${tm.cls}">★ ${tm.label}</span>`:''}
+          <div class="dt-head">
+            ${fav(j)}
+            <div class="ht"><h1>${esc(j.titel)}</h1><div class="firma">${esc(j.firma)}${j.ort?' · '+esc(j.ort):''}</div></div>
+          </div>
+        </div>
+        <div class="dt-inner">
+          <div class="dt-tags">
+            ${j.beschaeftigungsart?`<span class="tag">🕒 ${esc(j.beschaeftigungsart)}</span>`:''}
+            ${j.vertragsart?`<span class="tag">📄 ${esc(j.vertragsart)}</span>`:''}
+            ${j.eintritt?`<span class="tag">📅 ${esc(j.eintritt)}</span>`:''}
+            ${j.gehalt?`<span class="tag sal">💶 ${esc(fmtGehalt(j.gehalt))}</span>`:''}
+          </div>
+
+          <div class="tabs">
+            <button class="tab on" data-tab="job" onclick="switchTab('job')">Jobbeschreibung</button>
+            <button class="tab" data-tab="benefits" onclick="switchTab('benefits')">Benefits</button>
+            ${hasUeber?`<button class="tab" data-tab="ueber" onclick="switchTab('ueber')">Über uns</button>`:''}
+          </div>
+
+          <div class="tabpane on" data-tab="job">
+            ${blockText('Über die Stelle',j.beschreibung)}
+            ${blockList('Deine Aufgaben',j.aufgaben)}
+            ${blockList('Dein Profil',j.profil)}
+            ${carousel(j.stellen_bilder)}
+            ${(!j.beschreibung&&!asList(j.aufgaben).length&&!asList(j.profil).length)?'<div class="block"><div class="body" style="color:var(--muted)">Keine Beschreibung hinterlegt.</div></div>':''}
+          </div>
+          <div class="tabpane" data-tab="benefits">${benefitsHtml}</div>
+          ${hasUeber?`<div class="tabpane" data-tab="ueber">${ueberHtml}</div>`:''}
+        </div>
+      </div>
+
+      <div class="aside">
+        <div class="apply-card" id="applyCard">
+          <h3>Jetzt bewerben</h3>
+          <div class="sub">${tm.sub}</div>
+          <div class="err" id="applyErr"></div>
+          <div class="field"><label>Name *</label><input id="ap-name" placeholder="Vor- und Nachname"></div>
+          <div class="field"><label>E-Mail</label><input id="ap-email" type="email" placeholder="dein@email.de"></div>
+          <div class="field"><label>Telefon</label><input id="ap-tel" type="tel" placeholder="0151 …"></div>
+          <div class="field"><label>Nachricht (optional)</label><textarea id="ap-msg" placeholder="Kurz: Warum passt du? Wann verfügbar?"></textarea></div>
+          <button class="btn-apply" id="apBtn" onclick="submitApply('${esc(j.slug)}')">Bewerbung absenden</button>
+          <div class="consent">Mit dem Absenden stimmst du der Verarbeitung deiner Daten zur Bearbeitung der Bewerbung zu. Details in der <a href="datenschutz.html" target="_blank" rel="noopener">Datenschutzerklärung</a>.</div>
+        </div>
+        ${(j.ansprechpartner||j.kontakt_email||j.kontakt_telefon)?`
+        <div class="ap-card">
+          <div class="ap-h">Dein Ansprechpartner</div>
+          <div class="ap-top">${apFoto}
+            <div>${j.ansprechpartner?`<div class="ap-name">${esc(j.ansprechpartner)}</div>`:`<div class="ap-name">${esc(j.firma)}</div>`}
+            ${j.ansprechpartner_rolle?`<div class="ap-rolle">${esc(j.ansprechpartner_rolle)}</div>`:''}</div>
+          </div>
+          ${j.kontakt_telefon?`<div class="row"><span class="d">📞</span> <a href="tel:${esc(j.kontakt_telefon)}">${esc(j.kontakt_telefon)}</a></div>`:''}
+          ${j.kontakt_email?`<div class="row"><span class="d">✉️</span> <a href="mailto:${esc(j.kontakt_email)}">${esc(j.kontakt_email)}</a></div>`:''}
+        </div>`:''}
+        ${perksHtml}
+        ${stepperHtml}
+        <div class="firma-card">
+          <b>${esc(j.firma)}</b>
+          ${j.firma_ort?`<div class="row"><span class="d">📍</span> ${esc(j.firma_ort)}</div>`:''}
+          ${j.firma_website?`<div class="row"><span class="d">🔗</span> <a href="${esc(j.firma_website)}" target="_blank" rel="noopener" style="color:var(--o-dark)">Website</a></div>`:''}
+        </div>
+      </div>
+      ${relatedHtml(j)}
+    </div>`;
+}
+
+async function submitApply(slug){
+  const name=$('ap-name').value.trim();
+  const email=$('ap-email').value.trim();
+  const tel=$('ap-tel').value.trim();
+  const msg=$('ap-msg').value.trim();
+  const err=$('applyErr'); err.style.display='none';
+  if(!name){return showErr('Bitte gib deinen Namen an.');}
+  if(!email && !tel){return showErr('Bitte gib E-Mail oder Telefon an, damit der Betrieb dich erreichen kann.');}
+  const btn=$('apBtn'); btn.disabled=true; btn.textContent='Wird gesendet…';
+  const {error}=await sb.rpc('apply_to_job',{p_slug:slug,p_name:name,p_email:email,p_telefon:tel,p_nachricht:msg});
+  if(error){btn.disabled=false;btn.textContent='Bewerbung absenden';return showErr(error.message);}
+  $('applyCard').innerHTML='<div class="applied"><div class="big">✓</div><h3>Bewerbung gesendet!</h3><p>Der Betrieb hat deine Bewerbung erhalten und meldet sich bei dir. Viel Erfolg!</p></div>';
+}
+function showErr(m){const e=$('applyErr');e.textContent=m;e.style.display='block';}
+
+/* ---------- FAQ ---------- */
+const FAQ_DATA=[
+  {q:'Was kostet mich die Nutzung als Bewerber?',a:'Nichts. Stellensuche und Bewerbung über das GaLaBau-Karrierenetzwerk sind für Fachkräfte komplett kostenlos. Du brauchst kein Abo und keine Anmeldegebühr.'},
+  {q:'Brauche ich ein Anschreiben?',a:'Nein. Du füllst nur ein kurzes Formular mit Name und Kontakt aus – fertig. Kein Anschreiben-Marathon, keine hochgeladenen PDFs nötig. Der Betrieb meldet sich direkt bei dir.'},
+  {q:'Wie schnell meldet sich der Betrieb?',a:'Deine Bewerbung landet sofort direkt beim GaLaBau-Betrieb. Die meisten Betriebe melden sich innerhalb weniger Tage – oft schon am nächsten Werktag.'},
+  {q:'Welche Berufe finde ich hier?',a:'Alle Gewerke rund um den Garten- und Landschaftsbau: vom Landschaftsgärtner, Pflasterer und Gärtner über Baumpfleger und Baugeräteführer bis zu Vorarbeiter, Polier und Bauleiter.'},
+  {q:'Sind die Arbeitgeber geprüft?',a:'Ja. Auf dem Karrierenetzwerk erscheinen ausschließlich echte, geprüfte GaLaBau-Betriebe aus dem GreenCareers-Netzwerk – keine anonymen Anzeigen und keine Personalvermittler-Massenposts.'},
+  {q:'Werden Stellen in meiner Nähe angezeigt?',a:'Ja. Gib einfach deine Postleitzahl ein und stelle den Umkreis ein – die nächstgelegenen Betriebe werden dir zuerst angezeigt und nach Entfernung sortiert.'},
+  {q:'Was ist GreenCareers?',a:'GreenCareers betreibt das Karrierenetzwerk für den Garten- und Landschaftsbau. Geprüfte GaLaBau-Betriebe aus dem ganzen Bundesgebiet finden hier passende Fachkräfte aus ihrer Region.'},
+  {q:'Was passiert mit meinen Daten?',a:'Deine Angaben werden ausschließlich an den Betrieb weitergegeben, bei dem du dich bewirbst, und dienen nur der Bearbeitung deiner Bewerbung. Mehr dazu in der <a href="datenschutz.html" target="_blank" rel="noopener">Datenschutzerklärung</a>.'}
+];
+function renderFaq(){
+  const el=$('faqList'); if(!el) return;
+  el.innerHTML=FAQ_DATA.map((f,i)=>`
+    <div class="faq-item" id="faq${i}">
+      <div class="faq-q" onclick="toggleFaq(${i})"><span>${f.q}</span><span class="pm">+</span></div>
+      <div class="faq-a"><div class="inner">${f.a}</div></div>
+    </div>`).join('');
+  // JSON-LD für SEO/GEO
+  const strip=s=>s.replace(/<[^>]+>/g,'').replace(/&amp;/g,'&');
+  const ld={"@context":"https://schema.org","@type":"FAQPage","mainEntity":FAQ_DATA.map(f=>({
+    "@type":"Question","name":strip(f.q),"acceptedAnswer":{"@type":"Answer","text":strip(f.a)}}))};
+  const sc=document.createElement('script'); sc.type='application/ld+json';
+  sc.textContent=JSON.stringify(ld); document.head.appendChild(sc);
+}
+function toggleFaq(i){
+  const item=$('faq'+i), a=item.querySelector('.faq-a');
+  const open=item.classList.toggle('open');
+  a.style.maxHeight = open ? a.scrollHeight+'px' : '0';
+}
+
+typewriter();
+renderFaq();
+load();
+</script>
+<script src="assets/cookie-consent.js" data-accent="#16A34A" data-metapixel="634469765867935"></script>
+</body>
+</html>

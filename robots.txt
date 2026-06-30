@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://galabau.green-careers.de/sitemap.xml
