@@ -1249,7 +1249,10 @@ async function load(){
     $('resultInfo').textContent='';
     return;
   }
-  JOBS = data||[];
+  // HARTE Branchen-Sperre: dieses Portal zeigt ausschliesslich GaLaBau-Stellen.
+  // Quelle ist der geteilte public_jobs-Pool (galabau + tiefbau + landwirtschaft);
+  // wir lassen nur Betriebe mit theme='galabau' durch -> NIE Tiefbau-/Landwirtschaft-Inserate.
+  JOBS = (data||[]).filter(j => (j.firma_theme||'').toLowerCase()==='galabau');
   // Firmen-PLZ vorab geocoden (klein, einmalig)
   await Promise.all([...new Set(JOBS.map(j=>j.firma_plz).filter(Boolean))].map(geo));
   buildFilters();
@@ -1394,7 +1397,10 @@ function renderList(rows){
   const near = SEARCH_GEO ? ' · nach Entfernung sortiert' : '';
   $('resultInfo').textContent = rows.length+' '+(rows.length===1?'offene Stelle':'offene Stellen')+near;
   if(!rows.length){
-    $('list').innerHTML='<div class="empty"><div class="ico">🔍</div><b>Keine passenden Stellen gefunden.</b><br>Passe Filter oder Umkreis an.</div>';
+    const noJobsAtAll = !JOBS.length;
+    $('list').innerHTML = noJobsAtAll
+      ? '<div class="empty"><div class="ico">🌱</div><b>Aktuell sind hier noch keine Stellen ausgeschrieben.</b><br>Wir füllen das Netzwerk gerade mit geprüften GaLaBau-Betrieben. Trag dich oben in den Bewerberpool ein – dann meldest du dich als Erste:r, sobald passende Stellen online gehen.</div>'
+      : '<div class="empty"><div class="ico">🔍</div><b>Keine passenden Stellen gefunden.</b><br>Passe Filter oder Umkreis an.</div>';
     return;
   }
   $('list').innerHTML='<div class="grid">'+rows.map(j=>{
