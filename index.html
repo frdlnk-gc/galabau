@@ -106,7 +106,7 @@
           padding:7px 14px;border-radius:100px;border:1px solid rgba(22,163,74,.28)}
   .hero h1{font-size:clamp(31px,5.2vw,52px);line-height:1.12;letter-spacing:-1px;margin:20px 0 16px;font-weight:830}
   .mobr{display:inline}
-  .hero h1 .twline{display:inline-block;white-space:nowrap;line-height:1.12}
+  .hero h1 .twline{display:block;white-space:nowrap;line-height:1.14;font-size:clamp(22px,4.2vw,40px)}
   .hero h1 .tw{color:var(--o-glow);
        text-shadow:0 0 22px rgba(22,163,74,.55),0 0 44px rgba(22,163,74,.32)}
   .hero h1 .caret{display:inline-block;width:3px;height:.92em;background:var(--o-glow);margin-left:2px;
@@ -267,7 +267,9 @@
   }
 
   /* ---------- Partner-Logo-Slider ---------- */
-  .pslider{background:#fff;border-bottom:1px solid var(--line);padding:24px 0;overflow:hidden;position:relative}
+  .pslider{background:#fff;border-bottom:1px solid var(--line);padding:22px 0;overflow:hidden;position:relative}
+  .pslider-head{text-align:center;color:var(--muted);font-size:13.5px;font-weight:600;letter-spacing:.2px;margin:0 0 18px}
+  .pslider-head b{color:var(--o);font-weight:800}
   .pslider::before,.pslider::after{content:"";position:absolute;top:0;bottom:0;width:90px;z-index:2;pointer-events:none}
   .pslider::before{left:0;background:linear-gradient(90deg,#fff,transparent)}
   .pslider::after{right:0;background:linear-gradient(270deg,#fff,transparent)}
@@ -894,7 +896,8 @@
   </section>
 
   <!-- Partner-Logo-Slider -->
-  <div class="pslider" id="pslider" style="display:none">
+  <div class="pslider" id="pslider">
+    <div class="wrap"><p class="pslider-head"><b>500+ Arbeitgeber</b> aus dem Garten- &amp; Landschaftsbau suchen dich</p></div>
     <div class="ptrack" id="ptrack"></div>
   </div>
 
@@ -942,7 +945,7 @@
         <a class="gewerk" onclick="filterBranche('Baumpflege')"><span class="gw-ic">🌳</span>Baumpflege<span class="gw-arrow">→</span></a>
         <a class="gewerk" onclick="filterBranche('Pflanzung')"><span class="gw-ic">🌾</span>Pflanzung &amp; Begrünung<span class="gw-arrow">→</span></a>
         <a class="gewerk" onclick="filterBranche('Erdbau')"><span class="gw-ic">⛏️</span>Erd- &amp; Pflanzarbeiten<span class="gw-arrow">→</span></a>
-        <a class="gewerk" onclick="filterBranche('Teichbau')"><span class="gw-ic">💧</span>Teich- &amp; Wasserbau<span class="gw-arrow">→</span></a>
+        <a class="gewerk" onclick="filterBranche('Teichbau')"><span class="gw-ic">💧</span>Teich- &amp; Poolbau<span class="gw-arrow">→</span></a>
         <a class="gewerk" onclick="filterBranche('Zaunbau')"><span class="gw-ic">🪵</span>Zaun- &amp; Sichtschutzbau<span class="gw-arrow">→</span></a>
         <a class="gewerk" onclick="filterBranche('Baumaschinen')"><span class="gw-ic">🚜</span>Baugeräte &amp; Maschinen<span class="gw-arrow">→</span></a>
         <a class="gewerk" onclick="filterBranche('Sportplatzbau')"><span class="gw-ic">⚽</span>Sport- &amp; Spielplatzbau<span class="gw-arrow">→</span></a>
@@ -1067,7 +1070,7 @@ const BRANCHE_KEYS = {
   'Baumpflege':['baumpflege','baumpfleger','baumkletter','baumfäll','baumfaell','baumservice'],
   'Pflanzung':['pflanzung','pflanz','begrünung','begruenung','bepflanzung','dachbegrünung'],
   'Erdbau':['erdbau','erdarbeit','aushub','bodenmodellier','erdmodellier','planie'],
-  'Teichbau':['teich','wasserbau','wasser','schwimmteich'],
+  'Teichbau':['teich','pool','schwimmteich','schwimmbad','wasseranlage','wasserspiel','teichbau','poolbau'],
   'Zaunbau':['zaun','sichtschutz','zaunbau'],
 };
 function jobMatchesBranche(j,b){
@@ -1142,14 +1145,20 @@ const TIER_META={
 };
 
 /* ---------- Partner-Logo-Slider ---------- */
+/* Echte Arbeitgeber aus dem Garten- & Landschaftsbau (Logos lokal in assets/logos) */
+const PARTNER_LOGOS=[
+  ['carl-pabst','Carl Pabst'],['erlbacher','Erlbacher'],['gaerten-durch-jakober','Gärten durch Jakober'],
+  ['gartenbau-falz','Gartenbau Falz'],['hugeschmidt-gartenbau','Hugenschmidt Gartenbau'],
+  ['jensen-landschaftsarchitekten','Jensen Landschaftsarchitekten'],['samen-schmitz','Samen Schmitz'],
+  ['sander','Sander'],['schroeder','Schröder'],['weisenfeld','Weisenfeld'],['august-luedemann','August Lüdemann'],
+  ['bechstein','Bechstein'],['epp','Epp'],['erwin-vogt','Erwin Vogt'],['eurofleurs','Eurofleurs'],
+  ['florian-feth','Florian Feth'],['groebner','Gröbner'],['gruene-daecher','Grüne Dächer'],['herold','Herold'],
+  ['hiedl','Hiedl'],['huben','Huben'],['mauer','Mauer'],['meier','Meier'],['nussbaumer','Nussbaumer'],
+  ['poetschke','Poetschke'],['stanze','Stanze'],['sven-keim','Sven Keim']
+];
 function renderPartners(){
-  const seen=new Set(), items=[];
-  JOBS.forEach(j=>{
-    const key=j.firma_id||j.firma;
-    if(!key||seen.has(key)) return; seen.add(key);
-    if(j.firma_logo) items.push('<div class="plogo"><img src="'+esc(j.firma_logo)+'" alt="'+esc(j.firma)+'" loading="lazy"></div>');
-    else if(j.firma) items.push('<div class="plogo"><span class="pname">'+esc(j.firma)+'</span></div>');
-  });
+  const items=PARTNER_LOGOS.map(([f,n])=>
+    '<div class="plogo"><img src="assets/logos/'+f+'.jpg" alt="'+esc(n)+'" loading="lazy"></div>');
   if(items.length<2){ $('pslider').style.display='none'; return; }
   // Set verdoppeln -> nahtloser -50%-Loop
   $('ptrack').innerHTML = items.join('')+items.join('');
@@ -1200,7 +1209,7 @@ function expand(stemWord){
 }
 
 /* ---------- Typewriter ---------- */
-const TW_WORDS=['GaLaBau','Garten- & Landschaftsbau','Pflasterbau','Wegebau','Erdbau','Pflanzenbau'];
+const TW_WORDS=['GaLaBau','Garten- & Baumpflege','Teich- & Poolbau','Erd- & Pflanzarbeiten','Zaun- & Sichtschutzbau','Sport- & Spielplatzbau','Dach- & Fassadenbegrünung','Winterdienst','Pflaster- & Wegebau'];
 let twI=0;
 function typewriter(){
   const el=$('twWord'); if(!el) return;
